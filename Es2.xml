@@ -10,6 +10,12 @@
 <elementoRadice>
     <elementoFiglio>
         <elementoAnnidato>
+<!-- Aggiungo un <elementoFiglio> opportunamente annidato-->
+            <elementoFiglio>
+            </elementoFiglio>
+<!-- Aggiungo un <elementoFratello> all'<elementoFiglio> precedente-->
+            <elementoFratello>
+            </elementoFratello>
         </elementoAnnidato>
     </elementoFiglio>
     <elementoFiglio>
