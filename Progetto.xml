@@ -1,0 +1,1482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Progetto.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!-- 
+    File: Progetto per esame di Codifica di testi
+    Autrici: Isabella Tofanelli e Francesca Rumiz
+    Data: 27/07/2023
+-->
+<TEI xmlns="http://www.teic.org/ns/1.0" xml:lang="it">
+
+<!-- Intestazione TEI -->
+    <teiHeader>
+        <fileDesc>
+  <!-- Contiene la descrizione bibliografica del file elettronico -->
+            <titleStmt>
+            <!-- Contiene informazioni sul titolo e sulla responsabilità intellettuale del contenuto testuale -->
+                <title>Trascrizione elettronica delle pagine 141-145 dei Diari di Artom</title>
+                <author><ref target="#EA">Emanuele Artom</ref></author>       
+            </titleStmt>
+            <editionStmt>
+            <!-- Contiene informazioni sull'edizione del testo elettronico -->
+                <edition>Edizione digitale <date when="2023/07">(luglio 2023)</date></edition>
+                <respStmt>
+                    <resp>Codifica del manoscritto</resp>
+                    <name xml:id="FR">Francesca Rumiz</name>
+                    <name xml:id="IT">Isabella Tofanelli</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+            <!-- Contiene informazioni sulla pubblicazione e distribuzione del testo elettronico -->
+                <publisher>Università di Pisa</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability status="free">
+                    <p>File di pubblico dominio</p>
+                </availability>
+                <date when="2023-09">Settembre 2023</date>
+            </publicationStmt>
+            <sourceDesc>
+            <!-- Contiene informazioni sulla fonte da cui deriva il file informatico -->
+                <msDesc>
+                <!-- Contiene la descrizione del manoscritto -->
+                    <msIdentifier>
+                        <placeName>
+                            <region type="state">Italia</region>
+                            <settlement type="city">Milano</settlement>
+                        </placeName>
+                        <institution><orgName xml:id="CDEC"><abbr type="acronym">C.D.E.C.</abbr><expan>Fondazione Centro di Documentazione Ebraica Contemporanea</expan></orgName></institution>
+                        <repository role="library"><ref target="http://digital-library.cdec.it/cdec-web/">Digital Library</ref></repository>
+                        <collection><ref target="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/Fondo+Emanuele+Artom.html">Fondo Emanuele Artom</ref></collection>
+                        <idno type="collocation"> busta 1, fascicolo 9</idno>
+                        <altIdentifier><idno type="URI">http://digital-library.cdec.it/cdec-web/viewer/cdecxDamsHist003/IT-CDEC-ST0003-000006#page/1/mode/1up</idno></altIdentifier>
+                    </msIdentifier>
+                    <head>Diari</head>
+                    <msContents>
+                    <!-- Contiene la descrizione del contenuto intellettuale del manoscritto -->
+                        <p>Il manoscritto descrive l'esperienza partigiana di <persName><ref target="#EA"><forename>Emanuele</forename> <surname>Artom</surname></ref></persName> 
+                        attraverso annotazioni sulla vita delle bande, delle dinamiche sociali, dei contrasti politici e personali e delle tensioni tra popolazioni locali e combattenti 
+                        sviluppatasi <date from="1943" to="1944">tra il 1943 e il 1944</date>.</p>  
+                    </msContents>
+                    <physDesc>
+                    <!-- Contiene la descrizione fisica del manoscritto -->
+                        <objectDesc>
+                            <supportDesc>
+                            <!-- Contiene la descrizione del supporto -->
+                                <support>fogli di <material>carta</material></support>
+                                <extent>
+                                    <measure unit="pages" quantity="174">174 pagine.</measure>
+                                </extent>
+                                <condition>In generale, il manoscritto si presenta in buone condizioni. 
+                                Tuttavia, alcune pagine presentano segni di usura del tempo (buchi, strappi lungo i bordi e macchie).</condition>
+                            </supportDesc>
+                            <layoutDesc>
+                            <!-- Contiene la descrizione del layout generale del manoscritto -->
+                                <layout columns=" 1 " ruledLines=" 10 40 ">
+                                    <p>Le pagine variano tra le dieci e le quaranta righe scritte.</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                        <!-- Contiene la descrizione delle mani che hanno realizzato il manoscritto-->
+                            <p>E' scritto da una sola mano, cioè quella dell'autore, in corsivo</p>
+                        </handDesc>
+                        <accMat>
+                            <!-- Contiene informazioni relative ai materiali aggiuntivi associati al manoscritto: la lettera della madre Amalia Segre-->
+                            <p>è preceduto dalla lettera della madre dell'autore <persName><ref target="#AS"><forename>Amalia</forename> <surname>Segre</surname></ref></persName>,
+                            dove quest'ultima ha espresso la sua volontà di lasciare tale fonte storica al <orgName><ref target="#CDEC">Centro di Documentazione Ebraica Contemporanea</ref></orgName></p>
+                        </accMat>
+                    </physDesc>
+                    <history>
+                    <!-- Contiene informazioni riguardo la storia del manoscritto -->
+                        <origin>
+                        <!-- Contiene informazioni riguardo l'origine del manoscritto -->
+                            <p>I diari sono stati scritti <origDate notBefore="1943-11-24" notAfter="1944-02-23" cert="medium"> tra  il 24 novembre del 1943 e il 2 febbraio del 1944;</origDate></p>
+                        </origin>
+                        <provenance>
+                        <!-- Contiene informazioni relative ad un episodio della storia del manoscritto posteriore alla sua creazione e anteriore alla sua acquisizione -->
+                            <p>sono stati raccolti e conservati dalla madre dell'autore, <persName><ref target="#AS"><forename>Amalia</forename> <surname>Segre</surname></ref></persName>,
+                            per il bisogno di ricordare e trasmettere le memorie del figlio ritenute di grande valore storico.</p>
+                        </provenance>
+                        <acquisition>
+                        <!-- Contiene la descrizione del processo con cui il manoscritto è stato acquisito dall'istituzione che lo detiene -->
+                            <p>i diari sono stati donati, su espressa volontà di <persName><ref target="#AS"><forename>Amalia</forename></ref></persName>, alla Fondazione <abbr type="acronym"><ref target="#CDEC">C.D.E.C.</ref></abbr></p>
+                        </acquisition>
+                    </history>
+                    <additional>
+                    <!-- Contiene informazioni aggiuntive circa il manoscritto -->
+                        <adminInfo>
+                        <!-- Contiene informazioni sull'attuale gestione e disponibilità del manoscritto (accesso) -->
+                            <availability>
+                                <p>Consentito previa autorizzazione del responsabile dell'archivio, secondo le regole dell'Istituto e la normativa vigente.</p>
+                            </availability>
+                        </adminInfo>
+                        <listBibl>
+                        <!-- Contiene l'elenco dei riferimenti bibliografici del manoscritto -->
+                            <head>Edizioni successive al manoscritto originale</head>
+                            <biblStruct xml:id="edizione1966">
+                                <monogr>
+                                    <author>
+                                        <ref target="#EA">
+                                            <persName><forename>Emanuele</forename><surname>Artom</surname></persName>
+                                        </ref>
+                                    </author>
+                                    <editor xml:id="PDB">
+                                        <persName><forename>Paola</forename> <surname>De Benedetti</surname></persName>
+                                    </editor>
+                                    <editor xml:id="ER">
+                                        <persName><forename>Eloisa</forename> <surname>Ravenna</surname></persName>
+                                    </editor>
+                                    <title>Emanuele Artom, Diari: gennaio 1940 - febbraio 1944</title>
+                                    <note>pubblicati per la prima volta nel capoluogo lombardo nel 1966, in questa prima e parziale edizione si racconta l'esperienza partigiana di Emanuele Artom con annotazioni sulla vita delle bande, delle dinamiche sociali, dei contrasti politici e personali e delle tensioni tra popolazioni locali e combattenti sviluppatasi tra il novembre 1943 e il febbraio 1944 sulla base degli scritti che Emanuele Artom stendeva a volte a penna a volte a matita su fogli d'occasione.</note>
+                                    <edition>Prima e parziale edizione</edition>
+                                    <imprint>
+                                        <publisher><ref target="#CDEC">Centro di documentazione ebraica contemporanea</ref></publisher>
+                                        <pubPlace>Milano</pubPlace>
+                                        <date when="1966">1966</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                            <biblStruct xml:id="edizione2008">
+                                <monogr>
+                                    <author>
+                                        <ref target="#EA">
+                                            <persName><forename>Emanuele</forename><surname>Artom</surname></persName>
+                                        </ref>
+                                    </author>
+                                    <editor xml:id="GS">
+                                        <persName><forename>Guri</forename> <surname>Schuwarz</surname></persName>
+                                    </editor>
+                                    <title>Diari di un partigiano ebreo. Gennaio 1940 - febbraio 1944</title>
+                                    <note>questa seconda edizione, che si sviluppa dal 1 gennaio 1940 al 10 settembre 1943 è costituita, oltre che dai Diari pubblicati dal CDEC, anche dalla documentazione conservata presso l'Archivio dell'Istituto piemontese per la Storia della Resistenza e della Società Contemporanea ricca di notizie sulla vita culturale torinese, sullo sviluppo della persecuzione razziale, sugli effetti materiali e psicologici dei bombardamenti alleati sulla popolazione, sui processi sociali che prendono avvio tra la caduta di Mussolini e l'inizio dell'occupazione tedesca</note>
+                                    <edition>Seconda ed integrale edizione</edition>
+                                    <imprint>
+                                        <pubPlace>Torino</pubPlace>
+                                        <date when="2008">2008</date>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+                    </additional>               
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+        <!-- Contiene informazioni sui metodi e i principi applicati durante la codifica del manoscritto -->
+            <projectDesc>
+            <!-- Contiene la descrizione dello scopo del progetto -->
+                <p>progetto dell'esame di Codifica dei Testi del corso di studi di Informatica Umanistica</p>
+            </projectDesc>
+            <editorialDecl> 
+            <!-- Contiene informazioni sui principi e pratiche editoriali applicati durante la codifica del testo -->
+                <correction>
+                    <p>Le correzioni applicate dai codificatori corrispondono a cancellature, aggiunte ed espansioni delle abbreviazioni</p>
+                </correction> 
+                <punctuation>
+                    <p>I segni di punteggiatura presenti sul manoscritto originale e ritenuti corretti dai codificatori sono stati mantenuti; 
+                    quelli considerati inappropriati sono stati sostituiti; mentre quelli assenti sono stati aggiunti</p>
+                </punctuation>
+                <quotation>
+                    <p>Tutte le virgolette di apertura e di chiusura del discorso diretto, presenti nell'originale, sono state mantenute;
+                    mentre quelle assenti, sono state aggiunte dai codificatori</p>
+                </quotation>
+            </editorialDecl>
+            <classDecl>
+            <!-- Contiene le parole chiave che verranno usate in <profileDesc> <textClass> per definire gli argomenti -->
+                <taxonomy xml:id="keywords">
+                    <category xml:id="diario">
+                        <catDesc>Diario</catDesc>
+                    </category>
+                    <category xml:id="resistenza_partigiana">
+                        <catDesc>Resistenza partigiana</catDesc>
+                    </category>
+                    <category xml:id="ebraismo">
+                        <catDesc>Ebraismo</catDesc>
+                    </category>
+                    <category xml:id="seconda_guerra_mondiale">
+                        <catDesc>Seconda Guerra Mondiale</catDesc>
+                    </category> 
+                </taxonomy>
+            </classDecl>     
+        </encodingDesc>
+        <profileDesc>
+        <!-- Contiene la descrizione dettagliata degli aspetti non bibliografici del testo -->
+            <abstract>
+            <!-- Contiene un breve riepilogo della fonte originale scritto dal codificatore -->
+                <p>La fonte originale è composta dagli scritti autografi di <persName><ref target="#EA"><forename>Emanuele</forename><surname>Artom</surname></ref></persName> redatti <date from="1943" to="1944">tra il 1943 e il 1944</date>
+                Tali scritti riguardano la sua esperienza partigiana e sono preceduti dalla lettera originale della madre <persName><forename>Amalia</forename></persName>riportante l'epigrafe
+                <q>"Alla mia morte questo plico deve essere consegnato al Centro di documentazione ebraica [..] esso ha un grande valore storico [..]</q>.</p>
+            </abstract>
+            <langUsage>
+               <!-- <p>Registro informale</p> -->
+               <language ident="it">Italiano, registro informale</language>
+            </langUsage>
+            <textClass>
+            <!-- Contiene le categorie degli argomenti trattati dal testo e definiti in <encodingDesc> dentro <classDecl> -->
+               <keywords scheme="#keywords">
+                   <term resp="#FR">Diario</term>
+                   <term resp="#IT">Resistenza partigiana</term>
+                   <term resp="#FR">Ebraismo</term>
+                   <term resp="#IT">Seconda Guerra Mondiale</term>
+               </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+    <facsimile>
+    <!-- Pagina 141 -->
+        <surface n="1" xml:id="scan_p141" start="#pag1">
+            <graphic url='Img/141.png' width='646.545454px' height='838.545454px' />
+
+            <zone xml:id="scan_data1" ulx="411" uly="6" lrx="522" lry="40" /> <!-- Data giorno 2 febbraio -->
+
+            <!-- Righe -->
+            <zone xml:id="r1_141" ulx="14" uly="31" lrx="626" lry="77" /> <!-- Riga1 -->
+            <zone xml:id="r2_141" ulx="15" uly="67" lrx="601" lry="107" /> <!-- Riga2 -->
+            <zone xml:id="r3_141" ulx="15" uly="95" lrx="639" lry="139" /> <!-- Riga3 -->
+            <zone xml:id="r4_141" ulx="14" uly="128" lrx="623" lry="168" /> <!-- Riga4 -->
+            <zone xml:id="r5_141" points = " 9,146 645,178 645,206 11,166 " /> <!-- Riga5 -->
+            <zone xml:id="r6_141" points = " 11,176 643,208 643,232 8,190 " /> <!-- Riga6 -->
+            <zone xml:id="r7_141" points = " 3,200 3,235 633,260 633,233 " /> <!-- Riga7 -->
+            <zone xml:id="r8_141" points = " 10,231 9,260 626,281 626,258 " /> <!-- Riga8 -->
+            <zone xml:id="r9_141" points = " 9,255 8,280 640,305 642,280 " /> <!-- Riga9 -->
+            <zone xml:id="r10_141" points = " 11,275 9,303 617,330 616,307 " /> <!-- Riga10 -->
+            <zone xml:id="r11_141" points = " 12,302 10,329 630,354 629,325 " /> <!-- Riga11 -->
+            <zone xml:id="r12_141" points = " 7,328 6,352 617,380 618,353 "/> <!-- Riga12 -->
+            <zone xml:id="r13_141" points = " 5,356 3,381 630,411 630,380 " /> <!-- Riga13 -->
+            <zone xml:id="r14_141" points = " 8,382 8,402 627,431 628,410 " /> <!-- Riga14 -->
+            <zone xml:id="r15_141" points = " 13,404 12,427 643,458 642,429 " /> <!-- Riga15 -->
+            <zone xml:id="r16_141" points = " 12,430 10,456 631,482 631,457 "/> <!-- Riga16 -->
+            <zone xml:id="r17_141" points = " 8,454 9,485 635,508 636,479" /> <!-- Riga17 -->
+            <zone xml:id="r18_141" points = " 8,483 8,508 637,535 634,503 " /> <!-- Riga18 -->
+            <zone xml:id="r19_141" ulx="11" uly="514" lrx="611" lry="549" /> <!-- Riga19 -->
+            <zone xml:id="r20_141" points = " 9,538 8,559 643,592 639,554 " /> <!-- Riga20 -->
+            <zone xml:id="r21_141" ulx="12" uly="563" lrx="604" lry="600" /> <!-- Riga21 -->
+            <zone xml:id="r22_141" ulx="9" uly="588" lrx="595" lry="622" /> <!-- Riga22 -->
+            <zone xml:id="r23_141" ulx="13" uly="621" lrx="627" lry="654" /> <!-- Riga23 -->
+            <zone xml:id="r24_141" ulx="10" uly="648" lrx="615" lry="678" /> <!-- Riga24 -->
+            <zone xml:id="r25_141" ulx="11" uly="672" lrx="597" lry="703" /> <!-- Riga25 -->
+            <zone xml:id="r26_141" ulx="12" uly="694" lrx="616" lry="730" /> <!-- Riga26 -->
+            <zone xml:id="r27_141" points = " 7,713 6,736 614,760 616,736 " /> <!-- Riga27 -->
+            <zone xml:id="r28_141" points = " 7,735 7,762 634,786 633,755 " /> <!-- Riga28 -->
+            <zone xml:id="r29_141" points = " 9,757 10,786 619,804 617,781 " /> <!-- Riga29 -->
+            <zone xml:id="r30_141" points = " 15,785 15,805 613,830 613,809 " /> <!-- Riga30 -->
+            <zone xml:id="r31_141" points = " 7,804 5,839 611,838 610,827 " /> <!-- Riga30 -->
+
+            <!-- Interventi editoriali dell'autore -->
+            <zone xml:id="r6_corr1A_141" ulx="409" uly="199" lrx="450" lry="227" /> <!-- Riga6, cancellatura carattere "d" -->
+            <zone xml:id="r7_corr2A_141" ulx="229" uly="216" lrx="287" lry="244"/>  <!-- Riga7, cancellatura parola "grid" -->
+            <zone xml:id="r24_corr3A_141" ulx="195" uly="638" lrx="239" lry="666" /> <!-- Riga24, cancellatura parola "ma" -->
+            <zone xml:id="r24_corr4A_141" ulx="244" uly="650" lrx="275" lry="668" /> <!-- Riga24, cancellatura illeggibile -->
+            <zone xml:id="r25_corr5A_141" ulx="131" uly="660" lrx="161" lry="685" /> <!-- Riga25, cancellatura illeggibile -->
+
+            <!-- Interventi editoriali dei codificatori -->
+            <zone xml:id="r7_corr1C_141" ulx="108" uly="206" lrx="210" lry="235" /> <!-- Riga7, normalizzazione parola "rettorica"-->
+            <zone xml:id="r7_corr2C_141" ulx="387" uly="225" lrx="399" lry="234" /> <!-- Riga7, aggiunta doppio apice a inizio discorso diretto-->
+            <zone xml:id="r12_corr3C_141" ulx="596" uly="368" lrx="624" lry="378" /> <!-- Riga12, "," corretta in ";" -->
+            <zone xml:id="r14_corr4C_141" ulx="300" uly="406" lrx="316" lry="415" /> <!-- Riga14, "," corretta in ";" -->
+            <zone xml:id="r30_corr5C_141" ulx="405" uly="811" lrx="412" lry="820" /> <!-- Riga30, "," corretta in ";"-->
+            <zone xml:id="r31_corr6C_141" ulx="506" uly="831" lrx="518" lry="838" /> <!-- Riga31, "," corretta in ";"-->
+            <zone xml:id="r31_corr7C_141" ulx="551" uly="826" lrx="560" lry="837" /> <!-- Riga31, "3" corretto in "terzo" -->
+
+            <!-- Parole/lettere poco chiare -->
+            <zone xml:id="r6_unclear1_141" ulx="456" uly="200" lrx="475" lry="226" /> <!-- Riga6, carattere "s" poco chiaro, parola "studiando" -->
+            <zone xml:id="r15_unclear2_141" ulx="436" uly="410" lrx="459" lry="443" /> <!-- Riga15, carattere "B" poco chiaro, parola "Bisogna" -->
+            <zone xml:id="r22_unclear3_141" ulx="46" uly="573" lrx="71" lry="610" /> <!-- Riga 22 , carattere "p" poco chiaro, parola "parlato" -->
+
+            <!-- Personaggi citati (nomi propri) -->
+            <zone xml:id="r2_pers1_141" ulx="467" uly="77" lrx="542" lry="103"/> <!-- Riga2, citazione personaggio Mario -->
+            <zone xml:id="r3_pers2_141" ulx="11" uly="85" lrx="67" lry="113" /> <!-- Riga3, citazione personaggio Silvio -->
+            <zone xml:id="r4_pers3_141" ulx="231" uly="130" lrx="290" lry="154" /> <!-- Riga4, citazione personaggio Enzo -->
+            <zone xml:id="r4_pers4_141" ulx="511" uly="138" lrx="554" lry="158" /> <!-- Riga4, citazione personaggio Enzo -->
+            <zone xml:id="r10_pers5_141" ulx="495" uly="303" lrx="559" lry="325" /> <!-- Riga10, citazione personaggio Morè -->
+
+            <!-- Personaggi citati (nomi comuni) -->
+            <zone xml:id="r9_persCom1_141" ulx="246" uly="273" lrx="361" lry="304" /> <!-- Riga9, citazione personaggi "ragazzine" -->
+            <zone xml:id="r12_persCom2_141" ulx="258" uly="346" lrx="338" lry="368" /> <!-- Riga12, citazione personaggi "politici" -->
+            <zone xml:id="r13_persCom3_141" ulx="66" uly="358" lrx="148" lry="387" /> <!-- Riga13, citazione personaggi "soldati" -->
+            <zone xml:id="r14_persCom4_141" ulx="341" uly="397" lrx="569" lry="431" /> <!-- Riga13, citazione personaggi "superiori militari" -->
+            <zone xml:id="r22_persCom5_141" ulx="227" uly="598" lrx="319" lry="628" /> <!-- Riga22, citazione personaggi "soldati" -->
+            <zone xml:id="r23_persCom6_141" ulx="586" uly="625" lrx="627" lry="648" /> <!-- Riga23, inizio citazione personaggio "comandante"-->
+            <zone xml:id="r24_persCom6_141" ulx="10" uly="639" lrx="142" lry="662" /> <!-- Riga24, fine citazione personaggio "comandante"-->
+            <zone xml:id="r26_persCom7_141" ulx="468" uly="705" lrx="544" lry="724" /> <!--Riga 26, citazione personaggi "uomini"-->
+            <zone xml:id="r26_persCom8_141" ulx="595" uly="712" lrx="619" lry="731" /> <!-- Riga26, citazione personaggio "io" -->
+            <zone xml:id="r28_persCom9_141" ulx="428" uly="753" lrx="585" lry="781" /> <!--Riga 28, citazione personaggi "nostri uomini"-->
+            <zone xml:id="r31_persCom10_141" ulx="369" uly="821" lrx="511" lry="837" /> <!--Riga 31, citazione personaggi "nostri poveri"-->
+
+            <!-- Luoghi citati -->
+            <zone xml:id="r9_place1_141" ulx="31" uly="252" lrx="93" lry="282" /> <!-- Riga9, citazione luogo Torre -->
+            <zone xml:id="r26_place2_141" ulx="359" uly="704" lrx="426" lry="732" /> <!-- Riga26, citazione luogo Barge -->
+
+            <!-- Luoghi comuni citati -->
+            <zone xml:id="r2_placeCom1_141" ulx="262" uly="68" lrx="336" lry="99" /> <!-- Riga2, citazione luogo "stalla"-->
+            <zone xml:id="r3_placeCom2_141" ulx="362" uly="106" lrx="535" lry="131" /> <!-- Riga3, citazione luogo "camera vicina"-->
+            <zone xml:id="r11_placeCom3_141" ulx="587" uly="330" lrx="643" lry="358" /> <!-- Riga11, inizio citazione luogo "sua base"-->
+            <zone xml:id="r12_placeCom3_141" ulx="8" uly="326" lrx="56" lry="352" /> <!-- Riga12, fine citazione luogo "sua base"-->
+            <zone xml:id="r21_placeCom4_141" ulx="536" uly="573" lrx="593" lry="598" /> <!-- Riga21,  citazione luogo "base"-->
+
+        </surface>
+
+    <!-- Pagina 142 -->
+        <surface n="2" xml:id="scan_p142" start="#pag2">
+            <graphic url='Img/142.png' width='649.33334px' height='839.33334px' />
+
+            <!-- Righe -->
+            <zone xml:id="r1_142" ulx="5" uly="18" lrx="646" lry="53" /> <!-- Riga1 -->
+            <zone xml:id="r2_142" ulx="5" uly="40" lrx="630" lry="70" /> <!-- Riga2 -->
+            <zone xml:id="r3_142" ulx="8" uly="62" lrx="608" lry="94" /> <!-- Riga3 -->
+            <zone xml:id="r4_142" ulx="14" uly="82" lrx="633" lry="113" /> <!-- Riga4 -->
+            <zone xml:id="r5_142" ulx="13" uly="107" lrx="632" lry="142" /> <!-- Riga5 -->
+            <zone xml:id="r6_142" ulx="11" uly="128" lrx="621" lry="156" /> <!-- Riga6 -->
+            <zone xml:id="r7_142" ulx="8" uly="145" lrx="639" lry="182" /> <!-- Riga7 -->
+            <zone xml:id="r8_142" ulx="5" uly="176" lrx="635" lry="201" /> <!-- Riga8 -->
+            <zone xml:id="r9_142" ulx="9" uly="199" lrx="624" lry="227" /> <!-- Riga9 -->
+            <zone xml:id="r10_142" ulx="9" uly="223" lrx="625" lry="251" /> <!-- Riga10 -->
+            <zone xml:id="r11_142" ulx="5" uly="245" lrx="641" lry="280" /> <!-- Riga11 -->
+            <zone xml:id="r12_142" ulx="8" uly="270" lrx="639" lry="300" /> <!-- Riga12 -->
+            <zone xml:id="r13_142" ulx="8" uly="296" lrx="631" lry="322" /> <!-- Riga13 -->
+            <zone xml:id="r14_142" ulx="10" uly="314" lrx="635" lry="347" /> <!-- Riga14 -->
+            <zone xml:id="r15_142" ulx="12" uly="339" lrx="641" lry="371" /> <!-- Riga15 -->
+            <zone xml:id="r16_142" ulx="7" uly="360" lrx="646" lry="391" /> <!-- Riga16 -->
+            <zone xml:id="r17_142" ulx="6" uly="384" lrx="645" lry="414" /> <!-- Riga17 -->
+            <zone xml:id="r18_142" ulx="7" uly="405" lrx="633" lry="433" /> <!-- Riga18 -->
+            <zone xml:id="r19_142" ulx="9" uly="428" lrx="642" lry="454" /> <!-- Riga19 -->
+            <zone xml:id="r20_142" ulx="3" uly="443" lrx="640" lry="478" /> <!-- Riga20 -->
+            <zone xml:id="r21_142" points = " 6,464 6,489 632,507 630,482 " /> <!-- Riga21 -->
+            <zone xml:id="r22_142" ulx="7" uly="492" lrx="637" lry="524" /> <!-- Riga22 -->
+            <zone xml:id="r23_142" ulx="10" uly="513" lrx="646" lry="548" /> <!-- Riga23 -->
+            <zone xml:id="r24_142" ulx="7" uly="539" lrx="482" lry="569" /> <!-- Riga24 -->
+            <zone xml:id="r25_142" ulx="8" uly="559" lrx="646" lry="585" /> <!-- Riga25 -->
+            <zone xml:id="r26_142" ulx="12" uly="586" lrx="630" lry="606" /> <!-- Riga26 -->
+            <zone xml:id="r27_142" ulx="11" uly="609" lrx="646" lry="631" /> <!-- Riga27 -->
+            <zone xml:id="r28_142" ulx="7" uly="629" lrx="637" lry="655" /> <!-- Riga28 -->
+            <zone xml:id="r29_142" ulx="9" uly="651" lrx="619" lry="677" /> <!-- Riga29 -->
+            <zone xml:id="r30_142" ulx="11" uly="676" lrx="633" lry="703" /> <!-- Riga30 -->
+            <zone xml:id="r31_142" ulx="11" uly="696" lrx="643" lry="727" /> <!-- Riga31 -->
+            <zone xml:id="r32_142" ulx="10" uly="717" lrx="639" lry="751" /> <!-- Riga32 -->
+            <zone xml:id="r33_142" ulx="11" uly="742" lrx="644" lry="775" /> <!-- Riga33 -->
+            <zone xml:id="r34_142" ulx="10" uly="763" lrx="629" lry="791" /> <!-- Riga34 -->
+            <zone xml:id="r35_142" ulx="9" uly="786" lrx="644" lry="817" /> <!-- Riga35 -->
+            <zone xml:id="r36_142" ulx="6" uly="805" lrx="625" lry="831" /> <!-- Riga36 -->
+            <zone xml:id="r37_142" ulx="8" uly="817" lrx="643" lry="838" />  <!-- Riga37 -->
+
+            <!-- Interventi editoriali dell'autore -->
+            <zone xml:id="r1_corr1A_142" ulx="8" uly="10" lrx="98" lry="26" /> <!-- Riga1, cancellatura parola "venendo" -->
+            <zone xml:id="r9_corr2A_142" ulx="51" uly="193" lrx="104" lry="214" /> <!-- Riga9, cancellatura parola "siene" -->
+            <zone xml:id="r17_corr3A_142" ulx="547" uly="399" lrx="614" lry="420" /> <!-- Riga17, cancellatura parola "fucili" -->
+            <zone xml:id="r17_corr4A_142" ulx="564" uly="391" lrx="641" lry="410" /> <!-- Riga17, aggiunta parola "manufatti" -->
+            <zone xml:id="r19_corr5A_142" ulx="7" uly="432" lrx="47" lry="449" /> <!-- Riga19, cancellatura illeggibile -->
+            <zone xml:id="r21_corr6A_142" ulx="46" uly="479" lrx="95" lry="494"/> <!-- Riga21, cancellatura verbo "sono" -->
+            <zone xml:id="r21_corr7A_142" ulx="45" uly="470" lrx="119" lry="477" /> <!-- Riga21, aggiunta verbo "si dicono" -->
+            <zone xml:id="r22_corr8A_142" ulx="294" uly="502" lrx="309" lry="536" /> <!-- Riga22, sostituzione "s" in "z", parola "convinzione" -->
+            <zone xml:id="r26_corr9A_142" ulx="109" uly="589" lrx="230" lry="612" /> <!-- Riga26, cancellatura parola "durante" -->
+            <zone xml:id="r32_corr10A_142" ulx="39" uly="722" lrx="62" lry="749" /> <!-- Riga32, cancellatura caratteri "gl", parola "dagli" -->
+            <zone xml:id="r36_corr11A_142" ulx="6" uly="806" lrx="38" lry="827" /> <!-- Riga36, cancellatura illeggibile -->
+
+            <!-- Interventi editoriali dei codificatori -->
+            <zone xml:id="r4_corr1C_142" ulx="422" uly="92" lrx="432" lry="102" /> <!-- Riga4, "i" parola "importanti" corretta in "e", parola "importanti" -->
+            <zone xml:id="r8_corr2C_142" ulx="3" uly="165" lrx="11" lry="174" /> <!-- Riga8, aggiunta doppio apice a inizio discorso diretto -->
+            <zone xml:id="r8_corr3C_142" ulx="7" uly="168" lrx="20" lry="189" /> <!-- Riga8, "s" corretta in "S", parola "se" -->
+            <zone xml:id="r8_corr4C_142" ulx="263" uly="197" lrx="272" lry="205" /> <!-- Riga8, aggiunta doppio apice a fine discorso diretto -->
+            <zone xml:id="r12_corr5C_142" ulx="506" uly="291" lrx="515" lry="305" /> <!-- Riga12, "o" corretta in "i", parola "bevuto"-->
+            <zone xml:id="r36_corr6C_142" ulx="494" uly="818" lrx="569" lry="837" /> <!-- Riga36, "iviveri" corretto in "i viveri" -->
+
+            <!-- Parole/lettere poco chiare -->
+            <zone xml:id="r9_unclear_142" ulx="51" uly="193" lrx="104" lry="214" /> <!-- Riga9, parola "siene" poco chiara -->
+            <zone xml:id="r10_unclear1_142" ulx="260" uly="235" lrx="273" lry="253" /> <!-- Riga10, carattere "o" poco chiaro, parola "sciogliere" -->
+            <zone xml:id="r11_unclear2_142" ulx="113" uly="255" lrx="144" lry="274" /> <!-- Riga11, carattere "m" poco chiaro, parola "mi" -->
+            <zone xml:id="r13_unclear3_142" ulx="336" uly="301" lrx="358" lry="329" /> <!-- Riga13, carattere "D" poco chiaro, parola "Dopo" -->
+            <zone xml:id="r17_unclear4_142" ulx="373" uly="398" lrx="385" lry="414" /> <!-- Riga17, carattere "s" poco chiaro, parola "scambiando" -->
+            <zone xml:id="r28_unclear5_142" ulx="418" uly="643" lrx="431" lry="660" /> <!-- Riga28, carattere "u" poco chiaro, parola "tutti" -->
+            <zone xml:id="r33_unclear6_142" ulx="9" uly="741" lrx="34" lry="763"/> <!-- Riga33, carattere "i" poco chiaro, parola "i" -->
+
+            <!-- Personaggi citati (nomi propri) -->
+            <zone xml:id="r11_pers1_142" ulx="1" uly="242" lrx="54" lry="267" /> <!-- Citazione personaggio Roberto -->
+            <zone xml:id="r14_pers2_142" ulx="210" uly="316" lrx="263" lry="349" /> <!-- Citazione personaggio Enzo -->
+            <zone xml:id="r14_pers3_142" ulx="501" uly="329" lrx="561" lry="349" /> <!-- Citazione personaggio Oscar -->
+            <zone xml:id="r15_pers4_142" ulx="245" uly="348" lrx="326" lry="367" /> <!-- Citazione personaggio Mario -->
+
+            <!-- Personaggi citati (nomi comuni) -->
+            <zone xml:id="r1_persCom1_142" ulx="593" uly="15" lrx="644" lry="42" /> <!-- Riga1, citazione personaggi "donne" -->
+            <zone xml:id="r8_persCom2_142" ulx="496" uly="181" lrx="537" lry="197" /> <!-- Riga8, citazione personaggi "noi"-->
+            <zone xml:id="r9_persCom3_142" ulx="282" uly="193" lrx="310" lry="222" /> <!-- Riga9, citazione personaggio "Io" -->
+            <zone xml:id="r19_persCom4_142" ulx="313" uly="434" lrx="480" lry="456" /> <!-- Riga19, citazione personaggi "due dei nostri"-->
+            <zone xml:id="r20_persCom5_142" ulx="359" uly="454" lrx="644" lry="488" /> <!-- Riga20, citazione personaggi "tutti gli uomini del gruppo" -->
+            <zone xml:id="r21_persCom6_142" ulx="163" uly="461" lrx="189" lry="483" /> <!-- Riga21, citazione personaggio "Io" -->
+            <zone xml:id="r22_persCom7_142" ulx="617" uly="505" lrx="636" lry="525" /> <!-- Riga22, citazione personaggio "io" -->
+            <zone xml:id="r26_persCom8_142" ulx="10" uly="590" lrx="106" lry="613" /> <!-- Riga26, citazione personaggio "padrone" -->
+            <zone xml:id="r32_persCom9_142" ulx="81" uly="726" lrx="160" lry="747" /> <!-- Riga32, citazione personaggi "nemici" -->
+            <zone xml:id="r33_persCom10_142" ulx="48" uly="748" lrx="368" lry="774" /> <!-- Riga33, citazione personaggi "podestà di Torre e di Luserna" -->
+            <zone xml:id="r34_persCom11_142" ulx="204" uly="769" lrx="274" lry="792" /> <!-- Riga34, citazione personaggio "colonnello" -->
+            <zone xml:id="r34_persCom12_142" ulx="514" uly="777" lrx="626" lry="799" /> <!-- Riga34, citazione personaggi "partigiani" -->
+            <zone xml:id="r36_persCom13_142" ulx="60" uly="802" lrx="99" lry="816"  /> <!-- Riga36, citazione personaggi "noi" -->
+            <zone xml:id="r36_persCom14_142" ulx="241" uly="814" lrx="316" lry="835" /> <!-- Riga36, citazione personaggi "milizia" -->
+
+            <!-- Luoghi citati -->
+            <zone xml:id="r33_place1_142" ulx="175" uly="740" lrx="231" lry="761" /> <!-- Riga33, citazione luogo Torre -->
+            <zone xml:id="r33_place2_142" ulx="282" uly="739" lrx="368" lry="765" /> <!-- Riga33, citazione luogo Luserna -->
+            <zone xml:id="r36_place3_142" ulx="358" uly="803" lrx="427" lry="826" /> <!-- Riga36, citazione luogo Bobbio -->
+
+            <!-- Luoghi comuni citati -->
+            <zone xml:id="r25_placeCom1_142" ulx="139" uly="567" lrx="189" lry="591" /> <!-- Riga25, citazione luogo "base" -->
+            <zone xml:id="r25_placeCom2_142" ulx="359" uly="572" lrx="454" lry="597" /> <!-- Riga25, citazione luogo "fattoria" -->
+            <zone xml:id="r35_placeCom3_142" ulx="599" uly="800" lrx="645" lry="828" /> <!-- Riga35, citazione luogo "valle" -->
+
+            <!-- Nazioni citate -->
+            <zone xml:id="r5_country1_142" ulx="558" uly="104" lrx="635" lry="135" /> <!-- Riga6, inizio citazione luogo Inghilterra-->
+            <zone xml:id="r6_country1_142" ulx="558" uly="104" lrx="635" lry="135" /> <!-- Riga7, fine citazione luogo Inghilterra-->
+
+        </surface>
+
+    <!-- Pagina 143 -->
+        <surface n="3" xml:id="scan_p143" start= "#pag3">
+            <graphic url='Img/143.png' width='650.933334px' height='839.933334px' />
+
+            <!-- Righe -->
+            <zone xml:id="r1_143" ulx="5" uly="3" lrx="647" lry="33" /> <!-- Riga1 -->
+            <zone xml:id="r2_143" ulx="5" uly="28" lrx="645" lry="59" /> <!-- Riga2 -->
+            <zone xml:id="r3_143" points = " 5,46 6,68 647,94 648,66 " /> <!-- Riga3 -->
+            <zone xml:id="r4_143" points = " 8,68 8,98 624,110 622,86 " /> <!-- Riga4 -->
+            <zone xml:id="r5_143" ulx="6" uly="100" lrx="631" lry="132" /> <!-- Riga5 -->
+            <zone xml:id="r6_143" ulx="6" uly="124" lrx="647" lry="156" /> <!-- Riga6 -->
+            <zone xml:id="r7_143" ulx="3" uly="146" lrx="646" lry="175" /> <!-- Riga7 -->
+            <zone xml:id="r8_143" ulx="4" uly="169" lrx="629" lry="197" /> <!-- Riga8 -->
+            <zone xml:id="r9_143" ulx="7" uly="191" lrx="646" lry="223" /> <!-- Riga9 -->
+            <zone xml:id="r10_143" ulx="6" uly="215" lrx="642" lry="241" /> <!-- Riga10 -->
+            <zone xml:id="r11_143" ulx="5" uly="233" lrx="643" lry="264" /> <!-- Riga11 -->
+            <zone xml:id="r12_143" ulx="4" uly="259" lrx="645" lry="283" /> <!-- Riga12 -->
+            <zone xml:id="r13_143" ulx="5" uly="283" lrx="643" lry="306" /> <!-- Riga13 -->
+            <zone xml:id="r14_143" ulx="4" uly="301" lrx="645" lry="327" /> <!-- Riga14 -->
+            <zone xml:id="r15_143" ulx="9" uly="327" lrx="647" lry="350" /> <!-- Riga15 -->
+            <zone xml:id="r16_143" ulx="4" uly="346" lrx="631" lry="370" /> <!-- Riga16 -->
+            <zone xml:id="r17_143" ulx="9" uly="373" lrx="630" lry="390"/> <!-- Riga17 -->
+            <zone xml:id="r18_143" points = " 8,391 7,408 647,429 646,395 " /> <!-- Riga18 -->
+            <zone xml:id="r19_143" ulx="5" uly="409" lrx="645" lry="445" /> <!-- Riga19 -->
+            <zone xml:id="r20_143" ulx="4" uly="434" lrx="643" lry="466" /> <!-- Riga20 -->
+            <zone xml:id="r21_143" ulx="7" uly="458" lrx="632" lry="492" /> <!-- Riga21 -->
+            <zone xml:id="r22_143" ulx="3" uly="480" lrx="646" lry="517" /> <!-- Riga22 -->
+            <zone xml:id="r23_143" ulx="3" uly="504" lrx="626" lry="540" /> <!-- Riga23 -->
+            <zone xml:id="r24_143" ulx="5" uly="522" lrx="648" lry="564" /> <!-- Riga24 -->
+            <zone xml:id="r25_143" ulx="5" uly="549" lrx="616" lry="582" /> <!-- Riga25 -->
+            <zone xml:id="r26_143" ulx="9" uly="576" lrx="645" lry="607" /> <!-- Riga26 -->
+            <zone xml:id="r27_143" ulx="8" uly="601" lrx="641" lry="633" /> <!-- Riga27 -->
+            <zone xml:id="r28_143" ulx="8" uly="626" lrx="640" lry="654" /> <!-- Riga28 -->
+            <zone xml:id="r29_143" ulx="8" uly="650" lrx="645" lry="684" /> <!-- Riga29 -->
+            <zone xml:id="r30_143" ulx="6" uly="674" lrx="640" lry="708" /> <!-- Riga30 -->
+            <zone xml:id="r31_143" ulx="9" uly="699" lrx="640" lry="734"/> <!-- Riga31 -->
+            <zone xml:id="r32_143" ulx="6" uly="727" lrx="389" lry="759" /> <!-- Riga32 -->
+            <zone xml:id="r33_143" ulx="8" uly="754" lrx="651" lry="795" /> <!-- Riga33 -->
+            <zone xml:id="r34_143" points = " 15,774 13,804 643,826 642,804 " /> <!-- Riga34 -->
+
+            <!-- Interventi editoriali dell'autore -->
+            <zone xml:id="r4_corr1A_143" ulx="192" uly="77" lrx="273" lry="102" /> <!-- Riga4, cancellatura "E' mal" -->
+            <zone xml:id="r5_corr2A_143" ulx="500" uly="116" lrx="591" lry="132" /> <!-- Riga5, cancellatura parola "prepara" -->
+            <zone xml:id="r5_corr3A_143" ulx="592" uly="115" lrx="637" lry="139" /> <!-- Riga5, cancellatura illeggiile -->
+            <zone xml:id="r18_corr4A_143" ulx="113" uly="391" lrx="152" lry="413" /> <!-- Riga18, cancellatura segmento "l'a" -->
+            <zone xml:id="r33_corr5A_143" ulx="25" uly="769" lrx="70" lry="797" /> <!-- Riga33, cancellatura illeggibile -->
+
+            <!-- Interventi editoriali dei codificatori -->
+            <zone xml:id="r20_corr1C_243" ulx="421" uly="445" lrx="498" lry="470"/> <!-- Riga20, "perché" corretto in "dal momento che" -->
+            <zone xml:id="r22_corr2C_143" ulx="629" uly="525" lrx="649" lry="536" /> <!-- Riga22, inizio correzione di ", perché" in ";" -->
+            <zone xml:id="r23_corr3C_143" ulx="9" uly="505" lrx="83" lry="530" /> <!-- Riga23, fine correzione di ", perché" in ";" -->
+            <zone xml:id="r23_corr4C_143" ulx="89" uly="508" lrx="139" lry="531" /> <!-- Riga23, "han" corretto in "hanno" -->
+            <zone xml:id="r24_corr5C_143" ulx="624" uly="573" lrx="646" lry="590" /> <!-- Riga24, inizio correzione ", perché" in ";" -->
+            <zone xml:id="r25_corr6C_143" ulx="7" uly="557" lrx="85" lry="581" /> <!-- Riga25,fine correzione ", perché" in ";" -->
+            <zone xml:id="r27_corr7C_143" ulx="79" uly="608" lrx="96" lry="636" /> <!-- Riga27, "S" corretta in "s", parola "Svizzere" -->
+            <zone xml:id="r28_corr8C_143" ulx="74" uly="648" lrx="183" lry="670" /> <!-- Riga28, "terristorio" corretto in "territorio" -->
+
+            <!-- Parole/lettere poco chiare -->
+            <zone xml:id="r5_unclear1_143" ulx="576" uly="117" lrx="586" lry="134" /> <!-- Riga5, carattere "a" poco chiaro, parola "prepara" -->
+            <zone xml:id="r9_unclear2_143" ulx="109" uly="193" lrx="130" lry="213" /> <!-- Riga9, carattere "d" poco chiaro, parola "deciso" -->
+            <zone xml:id="r18_unclear3_143" ulx="441" uly="394" lrx="461" lry="421" /> <!-- Riga18, caratteri "ge" poco chiari, parola "Barge" -->
+            <zone xml:id="r22_unclear4_143" ulx="637" uly="502" lrx="650" lry="524" /> <!-- Riga22, caratteri "do" poco chiari, parola "splendido" -->
+            <zone xml:id="r28_unclear5_143" ulx="571" uly="652" lrx="602" lry="677" /> <!-- Riga28, carattere "d" poco chiaro, parola "direttamente" -->
+
+            <!-- Personaggi citati (nomi propri) -->
+            <zone xml:id="r33_pers1_143" ulx="77" uly="774" lrx="121" lry="799"/> <!-- Riga33, citazione personaggio "Roberto" -->
+
+            <!-- Personaggi citati (nomi comuni) -->
+            <zone xml:id="r2_persCom1_143" ulx="93" uly="31" lrx="393" lry="57" /> <!-- Riga2, citazione personaggi "famiglie dei prigionieri" -->
+            <zone xml:id="r5_persCom2_143" ulx="362" uly="109" lrx="402" lry="133" /> <!-- Riga5, citazione personaggi "loro" -->
+            <zone xml:id="r6_persCom3_143" ulx="398" uly="138" lrx="437" lry="155" /> <!-- Riga6, citazione personaggi "noi" -->
+            <zone xml:id="r8_persCom4_143" ulx="557" uly="181" lrx="616" lry="197" /> <!-- Riga8, citazione personaggi "loro" -->
+            <zone xml:id="r12_persCom5_143" ulx="154" uly="258" lrx="235" lry="285" /> <!-- Riga12, citazione personaggi "Podestà" -->
+            <zone xml:id="r13_persCom6_143" ulx="560" uly="284" lrx="599" lry="305" /> <!-- Riga13, citazione personaggi "Noi" -->
+            <zone xml:id="r20_persCom7_143" ulx="53" uly="438" lrx="95" lry="457" /> <!-- Riga20, citazione personaggi "Ted"-->
+            <zone xml:id="r29_persCom8_143" ulx="540" uly="684" lrx="643" lry="707" /> <!-- Riga29, citazione personaggio "professore" -->
+            <zone xml:id="r31_persCom9_143" ulx="411" uly="732" lrx="542" lry="754" /> <!-- Riga31, citazione personaggio "popolazione" -->
+            <zone xml:id="r34_persCom10_143" ulx="126" uly="805" lrx="375" lry="839" /> <!-- Riga34, citazione personaggio "guarnigione di militi" -->
+
+            <!-- Luoghi citati -->
+            <zone xml:id="r18_place1_143" ulx="395" uly="393" lrx="461" lry="417" /> <!-- Riga18, citazione luogo Barge -->
+            <zone xml:id="r19_place2_143" ulx="29" uly="411" lrx="95" lry="433" /> <!-- Riga19, citazione luogo Oregne -->
+            <zone xml:id="r27_place3_143" ulx="480" uly="616" lrx="546" lry="641" /> <!-- Riga27, citazione luogo Trieste -->
+            <zone xml:id="r29_place4_143" ulx="194" uly="673" lrx="338" lry="699" /> <!-- Riga29, citazione luogo valle del Po -->
+            <zone xml:id="r33_place5_143" ulx="473" uly="781" lrx="549" lry="811" /> <!-- Riga33, citazione luogo Prali -->
+
+            <!-- Luoghi comuni citati -->
+            <zone xml:id="r5_placeCom1_143" ulx="4" uly="101" lrx="60" lry="121" /> <!-- Riga5, citazione luogo "valle" -->
+            <zone xml:id="r10_placeCom2_143" ulx="219" uly="218" lrx="281" lry="237" /> <!-- Riga10, citazione luogo "valle" -->
+            <zone xml:id="r11_placeCom3_143" ulx="329" uly="237" lrx="391" lry="264" /> <!-- Riga11, citazione luogo "valle" -->
+            <zone xml:id="r14_placeCom4_143" ulx="324" uly="306" lrx="419" lry="325" /> <!-- Riga14, citazione luogo "aziende" -->
+            <zone xml:id="r15_placeCome5_143" ulx="6" uly="325" lrx="69" lry="348" /> <!-- Riga15, citazione luogo "scuole" --> 
+            <zone xml:id="r23_placeCom6_143" ulx="466" uly="518" lrx="521" lry="539" /> <!-- Riga23, citazione luogo "valle" -->
+            <zone xml:id="r33_placeCom7_143" ulx="317" uly="786" lrx="418" lry="810" /> <!-- Riga33, citazione luogo "caserma" -->
+            <zone xml:id="r34_placeCOm8_143" ulx="126" uly="805" lrx="375" lry="839" /> <!-- Riga34, citazione luogo "fortino" -->
+
+            <!-- Nazioni citate -->
+            <zone xml:id="r3_country1_143" ulx="314" uly="53" lrx="396" lry="83" /> <!-- Riga3, citazione luogo Austria -->
+            <zone xml:id="r3_country2_143" ulx="419" uly="58" lrx="500" lry="85" /> <!-- Riga3, citazione luogo Polonia -->
+            <zone xml:id="r3_country3_143" ulx="522" uly="61" lrx="648" lry="94" /> <!-- Riga3, citazione luogo Cecoslovacchia -->
+            <zone xml:id="r4_country4_143" ulx="5" uly="69" lrx="141" lry="102" /> <!-- Riga4, citazione luogo Inghilterra -->
+            <zone xml:id="r16_country5_143" ulx="323" uly="350" lrx="395" lry="374" /> <!-- Riga16, citazione luogo Italia -->
+
+        </surface>
+    <!-- Pagina 144 -->
+        <surface n="4" xml:id="scan_p144" start= "#pag4">
+            <graphic url='Img/144.png' width='647.171428px' height='803.171428px' />
+            
+            <!-- Righe -->
+            <zone xml:id="r1_144" ulx="2" uly="2" lrx="641" lry="27" /> <!-- Riga1 -->
+            <zone xml:id="r2_144" ulx="5" uly="32" lrx="635" lry="52" /> <!-- Riga2 -->
+            <zone xml:id="r3_144" ulx="7" uly="61" lrx="625" lry="79" /> <!-- Riga3 -->
+            <zone xml:id="r4_144" ulx="3" uly="86" lrx="626" lry="108" /> <!-- Riga4 -->
+            <zone xml:id="r5_144" ulx="4" uly="110" lrx="616" lry="132" /> <!-- Riga5 -->
+            <zone xml:id="r6_144" ulx="6" uly="134" lrx="633" lry="158" /> <!-- Riga6 -->
+            <zone xml:id="r7_144" ulx="9" uly="160" lrx="639" lry="184" /> <!-- Riga7 -->
+            <zone xml:id="r8_144" ulx="5" uly="185" lrx="641" lry="212" /> <!-- Riga8 -->
+            <zone xml:id="r9_144" ulx="6" uly="214" lrx="630" lry="232" /> <!-- Riga9 -->
+            <zone xml:id="r10_144" points = " 11,234 9,263 615,253 613,231 " /> <!-- Riga10 -->
+            <zone xml:id="r11_144" ulx="6" uly="258" lrx="639" lry="277" /> <!-- Riga11 -->
+            <zone xml:id="r12_144" ulx="6" uly="279" lrx="633" lry="301" /> <!-- Riga12 -->
+            <zone xml:id="r13_144" points = " 6,307 7,333 622,318 621,297 " /> <!-- Riga13 -->
+            <zone xml:id="r14_144" points = " 4,332 4,356 633,343 631,311 " /> <!-- Riga14 -->
+            <zone xml:id="r15_144" points = " 4,353 4,382 643,372 640,341 " /> <!-- Riga15 -->
+            <zone xml:id="r16_144" points = " 5,380 4,403 634,391 633,364 " /> <!-- Riga16 -->
+            <zone xml:id="r17_144" points = " 9,403 8,427 621,416 621,390 " /> <!-- Riga17 -->
+            <zone xml:id="r18_144" points = " 9,427 9,446 635,445 636,416 " /> <!-- Riga18 -->
+            <zone xml:id="r19_144" points = " 3,450 3,482 624,467 626,441 " /> <!-- Riga19 -->
+            <zone xml:id="r20_144" points = " 3,478 2,505 626,501 626,465 " /> <!-- Riga20 -->
+            <zone xml:id="r21_144" ulx="6" uly="503" lrx="629" lry="526" /> <!-- Riga21 -->
+            <zone xml:id="r22_144" ulx="5" uly="529" lrx="615" lry="549" /> <!-- Riga22 -->
+            <zone xml:id="r23_144" ulx="1" uly="551" lrx="642" lry="584" /> <!-- Riga23 -->
+            <zone xml:id="r24_144" ulx="2" uly="583" lrx="632" lry="609" /> <!-- Riga24 -->
+            <zone xml:id="r25_144" ulx="4" uly="609" lrx="375" lry="631" /> <!-- Riga25 -->
+            <zone xml:id="r26_144" ulx="7" uly="632" lrx="633" lry="664" /> <!-- Riga26 -->
+            <zone xml:id="r27_144" ulx="7" uly="663" lrx="627" lry="694" /> <!-- Riga27 -->
+            <zone xml:id="r28_144" ulx="6" uly="693" lrx="609" lry="721" /> <!-- Riga28 -->
+            <zone xml:id="r29_144" points = " 9,721 9,741 408,752 408,722 " /> <!-- Riga29 -->
+            <zone xml:id="r30_144" ulx="6" uly="718" lrx="425" lry="793" /> <!-- Riga30 -->
+            
+            <!-- Interventi editoriali dell'autore -->
+            <zone xml:id="r4_corr1A_144" ulx="435" uly="52" lrx="625" lry="80" /> <!-- Riga4, cancellatura carattere "l", parola "il" -->
+            <zone xml:id="r4_corr2A_144" ulx="349" uly="81" lrx="375" lry="108" /> <!-- Riga4, sostituzione di "o" con "i", parola "futuri" -->
+            <zone xml:id="r5_corr3A_144" ulx="1" uly="113" lrx="100" lry="137" /> <!-- Riga5, cancellatura di "pare che"-->
+            <zone xml:id="r9_corr4A_144" ulx="401" uly="216" lrx="515" lry="233" /> <!-- Riga9, cancellatura di "ma dicono"-->
+            <zone xml:id="r11_corr5A_144" ulx="159" uly="267" lrx="209" lry="283" /> <!-- Riga11, cancellatura di "per" -->
+            <zone xml:id="r12_corr6A_144" ulx="296" uly="279" lrx="319" lry="302" /> <!-- Riga12, cancellatura illeggibile -->
+            <zone xml:id="r15_corr7A_144" ulx="3" uly="361" lrx="289" lry="376" /> <!-- Riga15, cancellatura di "dicendo che non si poteva" -->
+            <zone xml:id="r15_corr8A_144" ulx="44" uly="354" lrx="227" lry="363" /> <!-- Riga15, aggiunta di "rimproverandoli di" -->
+            <zone xml:id="r16_corr9A_144" ulx="440" uly="347" lrx="491" lry="367" /> <!-- Riga16, cancellatura di "ora" -->
+            <zone xml:id="r16_corr10A_144" ulx="162" uly="376" lrx="241" lry="399" /> <!-- Riga 16, cancellatura di "L.B e" -->
+            <zone xml:id="r20_corr11A_144" ulx="379" uly="475" lrx="445" lry="496" /> <!-- Riga20, cancellatura illeggibile -->
+            <zone xml:id="r20_corr12A_144" ulx="471" uly="478" lrx="517" lry="502" /> <!-- Riga20, cancellature illeggibili -->
+            <zone xml:id="r23_corr13A_144" ulx="36" uly="554" lrx="226" lry="583" /> <!-- Riga23, cancellatura di "chiamare le for" -->
+            <zone xml:id="r23_corr14A_144" ulx="234" uly="560" lrx="263" lry="579" /> <!-- Riga23, cancellatura illeggibile -->
+            <zone xml:id="r23_corr15A_144" ulx="447" uly="552" lrx="462" lry="577" /> <!-- Riga23, sostituzione "i" con "e", parola "tutte" -->
+            <zone xml:id="r23_corr16A_144" ulx="467" uly="552" lrx="534" lry="578" /> <!-- Riga23, cancellatura di "le fo" -->
+            <zone xml:id="r26_corr17A_144" ulx="306" uly="635" lrx="365" lry="659" /> <!-- Riga26, cancellatura illeggibile -->
+            <zone xml:id="r29_corr18A_144" ulx="9" uly="717" lrx="111" lry="744" /> <!-- Riga29, cancellatura di "stamane" -->
+            <zone xml:id="r29_corr19A_144" points = " 10,738 3,759 189,794 207,766 " /> <!-- Riga29, aggiunta di "a pranzo o a cena" -->
+
+            <!-- Interventi editoriali dei codificatori -->
+            <zone xml:id="r2_corr1C_144" ulx="208" uly="48" lrx="214" lry="54" /> <!-- Riga2, aggiunta "." a "L.B" -->
+            <zone xml:id="r3_corr2C_144" ulx="154" uly="73" lrx="158" lry="80" /> <!-- Riga3, aggiunta "." a "G" -->
+            <zone xml:id="r8_corr3C_144" ulx="512" uly="202" lrx="521" lry="209" /> <!-- Riga8, aggiunta "," -->
+            <zone xml:id="r8_corr4C_144" ulx="564" uly="198" lrx="574" lry="208" /> <!-- Riga8, aggiunta "," -->
+
+            <!-- Parole/lettere poco chiare -->
+            <zone xml:id="r26_unclear1_144" ulx="366" uly="630" lrx="401" lry="659" /> <!-- Riga26, carattere "C" poco chiaro -->
+            
+            <!-- Personaggi citati (nomi propri) -->
+            <zone xml:id="r2_pers1_144" points = " 153,30 154,56 209,53 226,26 " /> <!-- Riga2, citazione personaggio "L.B." -->
+            <zone xml:id="r3_pers2_144" ulx="138" uly="59" lrx="157" lry="91" /> <!-- Riga3, citazione personaggio "G."-->
+            <zone xml:id="r3_pers3_144" ulx="179" uly="57" lrx="211" lry="83" /> <!-- Riga3, citazione personaggio "Z." -->
+            <zone xml:id="r3_pers4_144" ulx="257" uly="54" lrx="294" lry="80" /> <!-- Riga3, citazione personaggio "Z." -->
+            <zone xml:id="r8_pers5_144" ulx="39" uly="186" lrx="88" lry="210" /> <!-- Riga8, citazione personaggio "Rob." -->
+            <zone xml:id="r8_pers6_144" ulx="456" uly="187" lrx="516" lry="211" /> <!-- Riga8, citazione personaggio "Rob." -->
+            <zone xml:id="r8_pers7_144" ulx="520" uly="185" lrx="565" lry="207" /> <!-- Riga8, citazione personaggio "Pre." -->
+            <zone xml:id="r8_pers8_144" ulx="572" uly="183" lrx="644" lry="214" /> <!-- Riga8, citazione personaggio "Mario" -->
+            <zone xml:id="r9_pers9_144" ulx="518" uly="209" lrx="578" lry="232" /> <!-- Riga9, citazione personaggio "Silvio" -->
+            <zone xml:id="r10_pers10_144" ulx="124" uly="239" lrx="197" lry="259" /> <!-- Riga10, citazione personaggio "Mario" -->
+            <zone xml:id="r12_pers11_144" ulx="225" uly="283" lrx="290" lry="307" /> <!-- Riga12, citazione personaggio "L.B." -->
+            <zone xml:id="r12_pers12_144" ulx="548" uly="278" lrx="611" lry="296" /> <!-- Riga12, citazione personaggio "Silvio" -->
+            <zone xml:id="r14_pers13_144" ulx="193" uly="329" lrx="242" lry="353" /> <!-- Riga14, citazione personaggio "Rob." -->
+            <zone xml:id="r14_pers14_144" ulx="440" uly="347" lrx="491" lry="367" /> <!-- Riga14, citazione personaggio "Rob." -->
+            <zone xml:id="r20_pers15_144" ulx="448" uly="470" lrx="472" lry="494" /> <!-- Riga20, citazione personaggio "Z." -->
+            <zone xml:id="r22_pers16_144" ulx="276" uly="529" lrx="298" lry="551" /> <!-- Riga22, citazione personaggio "Z" -->
+            <zone xml:id="r22_pers17_144" ulx="456" uly="522" lrx="503" lry="546" /> <!-- Riga20, citazione personaggio "Rob" -->
+            <zone xml:id="r24_pers18_144" ulx="136" uly="577" lrx="217" lry="608" /> <!-- Riga24, citazione personaggio "L.B." -->
+            <zone xml:id="r25_pers19_144" ulx="302" uly="607" lrx="365" lry="627" /> <!-- Riga25, citazione personaggio "Silvio" -->
+            <zone xml:id="r26_pers20_144" ulx="106" uly="632" lrx="147" lry="663" /> <!-- Riga26, citazione personaggio "Fr." -->
+            <zone xml:id="r29_pers21_144" ulx="115" uly="719" lrx="152" lry="754" /> <!-- Riga29, citazione personaggio "G." -->
+
+            <!-- Personaggi citati (nomi comuni) -->
+            <zone xml:id="r7_persCom1_144" ulx="248" uly="161" lrx="469" lry="186" /> <!-- Riga7, citazione personaggi "Quanti si oppongono" -->
+            <zone xml:id="r8_persCom2_144" ulx="386" uly="191" lrx="448" lry="209" /> <!-- Riga8, citazione personaggio "colon" -->
+            <zone xml:id="r9_persCom3_144" ulx="26" uly="214" lrx="50" lry="234" /> <!-- Riga9, citazione personaggio "io" -->
+            <zone xml:id="r12_persCom4_144" ulx="355" uly="280" lrx="422" lry="298" /> <!-- Riga12, citazione personaggio "colonn" -->
+            <zone xml:id="r13_persCom5_144" ulx="5" uly="308" lrx="61" lry="336" /> <!-- Riga13, citazione personaggi "altri" -->
+            <zone xml:id="r13_persCom6_144" ulx="571" uly="297" lrx="618" lry="316" /> <!-- Riga13, citazione personaggi "essi" -->
+            <zone xml:id="r16_persCom7_144" ulx="241" uly="376" lrx="271" lry="402" /> <!-- Riga16, citazione personaggio "Io" -->
+            <zone xml:id="r21_persCom8_144" ulx="5" uly="500" lrx="77" lry="524" /> <!-- Riga12, citazione personaggio "colonn" -->
+
+            <!-- Luoghi comuni citati -->
+            <zone xml:id="r27_placeCom1_144" ulx="120" uly="665" lrx="173" lry="686" /> <!-- Riga27, citazione luogo "casa" -->
+
+        </surface>
+
+    <!-- Pagina 145 -->
+        <surface xml:id="scan_p145" start="#pag5">
+            <graphic url='Img/145.png' width='613.222222px' height='825.222222px' />
+
+            <zone xml:id="scan_data2" ulx="472" uly="-1" lrx="560" lry="17" /> <!-- Data giorno 3 febbraio -->
+
+            <!-- Righe -->
+            <zone xml:id="r1_145" ulx="12" uly="10" lrx="571" lry="40"/> <!-- Riga1 -->
+            <zone xml:id="r2_145" ulx="5" uly="44" lrx="603" lry="73"/> <!-- Riga2 -->
+            <zone xml:id="r3_145" ulx="7" uly="78" lrx="603" lry="102"/> <!-- Riga3 -->
+            <zone xml:id="r4_145" ulx="10" uly="110" lrx="602" lry="136" /> <!-- Riga4 -->
+            <zone xml:id="r5_145" ulx="10" uly="144" lrx="605" lry="171"/> <!-- Riga5 -->
+            <zone xml:id="r6_145" ulx="10" uly="180" lrx="590" lry="205"/> <!-- Riga6 -->
+            <zone xml:id="r7_145" ulx="14" uly="214" lrx="590" lry="234"/> <!-- Riga7 -->
+            <zone xml:id="r8_145" ulx="14" uly="245" lrx="596" lry="270"/> <!-- Riga8 -->
+            <zone xml:id="r9_145" ulx="16" uly="273" lrx="611" lry="306"/> <!-- Riga9 -->
+            <zone xml:id="r10_145" ulx="15" uly="306" lrx="586" lry="332"/> <!-- Riga10 -->
+            <zone xml:id="r11_145" ulx="13" uly="340" lrx="593" lry="369"/> <!-- Riga11 -->
+            <zone xml:id="r12_145" ulx="11" uly="376" lrx="592" lry="405"/> <!-- Riga12 -->
+            <zone xml:id="r13_145" ulx="13" uly="408" lrx="606" lry="436"/> <!-- Riga13 -->
+            <zone xml:id="r14_145" ulx="11" uly="444" lrx="605" lry="462"/> <!-- Riga14 -->
+            <zone xml:id="r15_145" ulx="11" uly="474" lrx="575" lry="500"/> <!-- Riga15 -->
+            <zone xml:id="r16_145" ulx="12" uly="507" lrx="586" lry="531"/> <!-- Riga16 -->
+            <zone xml:id="r17_145" ulx="12" uly="537" lrx="582" lry="562"/> <!-- Riga17 -->
+            <zone xml:id="r18_145" ulx="11" uly="566" lrx="604" lry="596"/> <!-- Riga18 -->
+            <zone xml:id="r19_145" ulx="11" uly="603" lrx="603" lry="633"/> <!-- Riga19 -->
+            <zone xml:id="r20_145" ulx="15" uly="638" lrx="600" lry="661"/> <!-- Riga20 -->
+            <zone xml:id="r21_145" ulx="12" uly="666" lrx="580" lry="693" /> <!-- Riga21 -->
+            <zone xml:id="r22_145" ulx="11" uly="697" lrx="590" lry="727" /> <!-- Riga22 -->
+            <zone xml:id="r23_145" ulx="12" uly="735" lrx="280" lry="763"/> <!-- Riga23 -->
+            <zone xml:id="r24_145" ulx="12" uly="765" lrx="583" lry="794"/> <!-- Riga24 -->
+            <zone xml:id="r25_145" ulx="11" uly="796" lrx="600" lry="824"/> <!-- Riga25 -->
+
+            <!-- Interventi editoriali dell'autore -->
+            <zone xml:id="r4_corr1A_145" ulx="149" uly="111" lrx="177" lry="144" /> <!-- Riga4, cancellatura di "La" -->
+            <zone xml:id="r5_corr2A_145" ulx="218" uly="141" lrx="237" lry="175" /> <!-- Riga5, sostituzione "i" in "I", parola "Italiani" -->
+            <zone xml:id="r8_corr3A_145" ulx="11" uly="246" lrx="68" lry="270" /> <!-- Riga8, cancellatura di "Però" -->
+            <zone xml:id="r18_corr4A_145" ulx="221" uly="565" lrx="342" lry="594" /> <!-- Riga18, cancellatura di "E' stata an" -->
+            <zone xml:id="r21_corr5A_145" ulx="156" uly="672" lrx="244" lry="695" /> <!-- Riga21, cancellatura di "davano"-->
+            <zone xml:id="r25_corr6A_145" ulx="347" uly="796" lrx="457" lry="822" /> <!-- Riga25, cancellatura di "E' strano" -->
+
+            <!-- Interventi editoriali dei codificatori -->
+            <zone xml:id="r8_corr1C_145" ulx="514" uly="248" lrx="524" lry="263" /> <!-- Riga8, aggiunta di "è" -->
+            <zone xml:id="r9_corr2C_145" ulx="366" uly="293" lrx="372" lry="300" /> <!-- Riga9, aggiunta "," -->
+            <zone xml:id="r9_corr3C_145" ulx="432" uly="293" lrx="440" lry="301" /> <!-- Riga9, aggiunta "," -->
+            <zone xml:id="r20_corr4C_145" ulx="302" uly="637" lrx="315" lry="644" /> <!-- Riga20, aggiunta doppio apice di apertura -->
+            <zone xml:id="r21_corr5C_145" ulx="127" uly="669" lrx="137" lry="680" /> <!-- Riga20, aggiunta doppio apice di chiusura -->
+
+            <!-- Parole/lettere poco chiare-->
+            <zone xml:id="r1_unclear1_145" ulx="491" uly="19" lrx="503" lry="38" /> <!-- Riga1, cartteri "tt" poco chiari, parola "letto" -->
+            <zone xml:id="r24_unclear2_145" ulx="547" uly="767" lrx="568" lry="792" /> <!-- Riga24, carattere "N" poco chiaro, parola "Ne" -->
+
+            <!-- Personaggi citati (nomi propri) -->
+            <zone xml:id="r16_pers1_145" ulx="502" uly="502" lrx="540" lry="525" /> <!-- Riga16, citazione personaggio "M" -->
+            <zone xml:id="r17_pers2_145" ulx="351" uly="535" lrx="380" lry="568" /> <!-- Riga17, citazione personaggio "G" -->
+            <zone xml:id="r21_pers3_145" ulx="11" uly="669" lrx="129" lry="695" /> <!-- Riga21, citazione personaggio Mussolini -->
+            <zone xml:id="r25_pers4_145" ulx="291" uly="796" lrx="341" lry="824" /> <!-- Riga25, citazione personaggio "Gu." -->
+
+            <!-- Personaggi citati (nomi comuni) -->
+            <zone xml:id="r2_persCom1_145" ulx="385" uly="49" lrx="497" lry="80" /> <!-- Riga2, citazione personaggio "mia ospite" -->
+            <zone xml:id="r7_persCom2_145" ulx="253" uly="215" lrx="294" lry="237" /> <!-- Riga7, citazione personaggio "noi" --> 
+            <zone xml:id="r8_persCom3_145" ulx="155" uly="248" lrx="185" lry="267" /> <!-- Riga8, citazione personaggio "lei" -->
+            <zone xml:id="r12_persCom4_145" ulx="11" uly="383" lrx="101" lry="404" /> <!-- Riga12, citazione personaggio "mamma" -->
+            <zone xml:id="r17_persCom5_145" ulx="425" uly="539" lrx="488" lry="560" /> <!-- Riga17, citazione personaggio "amico" -->
+            <zone xml:id="r20_persCom6_145" ulx="39" uly="642" lrx="141" lry="661" /> <!-- Riga20, citazione personaggi "bambini" -->
+            <zone xml:id="r21_persCom7_145" ulx="397" uly="635" lrx="500" lry="655" /> <!-- Riga21, citazione personaggi "patrioti" -->
+            <zone xml:id="r24_persCom8_145" ulx="269" uly="769" lrx="540" lry="792" /> <!-- Riga24, citazione personaggio "famiglia di conoscenti" -->
+
+            <!-- Luoghi citati -->
+            <zone xml:id="r16_place1_145" ulx="159" uly="502" lrx="261" lry="531" /> <!-- Riga16, citazione luogo Luserna -->
+            <zone xml:id="r19_place2_145" ulx="518" uly="599" lrx="601" lry="628" /> <!-- Riga19, citazione luogo Luserna -->
+            <zone xml:id="r22_place3_145" ulx="355" uly="698" lrx="435" lry="723" /> <!-- Riga22, citazione luogo Bobbio -->
+
+            <!-- Luoghi comuni citati -->
+            <zone xml:id="r11_placeCom1_145" ulx="183" uly="344" lrx="236" lry="375" /> <!-- Riga11, citazione luogo "posta" -->
+            <zone xml:id="r11_placeCom2_145" ulx="498" uly="341" lrx="545" lry="364" /> <!-- Riga11, citazione luogo "casa" -->
+            <zone xml:id="r19_placeCom3_145" ulx="294" uly="600" lrx="384" lry="634" /> <!-- Riga19, citazione luogo "collegio" -->
+
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+            <div type="page" n="141">
+            <!-- Prima pagina (141)-->
+                <pb xml:id="pag1" n="1" facs="#scan_p141"/>
+                <!-- Inizio della pagina di diario del 2 febbraio -->
+                <dateline facs="#scan_data1"><date when="1943-02-02">2<choice> <abbr type="suspension"> <w>febbr<am>.</am></w></abbr> <expan resp="#FR #IT"><w>febbr<ex>aio</ex></w></expan> </choice></date></dateline>
+                <ab xml:id="giorno2feb" n="1">
+                    <lb xml:id="lb1_141" facs="#r1_141" />
+                    E’ la mattina del <date when="1943-02-02">2<choice><abbr type="suspension"> <w>febbr</w></abbr><expan resp="#FR #IT"> <w>febbr<ex>aio</ex></w></expan></choice></date> e io scrivo il diario di ieri.
+                    <lb xml:id="lb2_141" facs="#r2_141" />
+                    Appena alzato dalla <rs facs="#r2_placeCom1_141" type="place">stalla</rs> andai da <persName facs="#r2_pers1_141"><ref target="#Ma"><forename>Mario</forename></ref></persName> e da
+                    <lb xml:id="lb3_141" facs="#r3_141" />
+                    <persName facs="#r3_pers2_141"><ref target="#Si"><forename>Silvio</forename></ref></persName>, che dormivano in una <rs facs="#r3_placeCom2_141" type="place">camera vicina</rs>. Si parlò
+                    <lb xml:id="lb4_141" facs="#r4_141" />
+                    di tre argomenti: <persName facs="#r4_pers3_141"><ref target="#En"><forename>Enzo</forename></ref></persName> tregua, comandi. <persName facs="#r4_pers4_141"><ref target="#En"><forename>Enzo</forename></ref></persName>, non
+                    <lb xml:id="lb5_141" facs="#r5_141" />
+                    so se ne ho già parlato, è un ufficiale giovane, <distinct type="old-fashoned"><ref target="https://www.treccani.it/vocabolario/gaga/">gagà</ref></distinct>, <w>stu=
+                    <lb xml:id="lb6_141" rend="double stroke" facs="#r6_141" break="no" />
+                    pido</w>, non cattivo, che parla troppo <w>e<del rend="overstrike" facs="#r6_corr1A_141" hand="author"><c>d</c></del></w>, <w><unclear facs="#r6_unclear1_141" cert="high" resp="#FR #IT" reason="ink" agent="ink"><c>s</c></unclear>tudiando</w> lettere,
+                    <lb xml:id="lb7_141" facs="#r7_141" />
+                    pieno di <choice><orig facs="#r7_corr1C_141"><distinct type="archaic"><ref target="https://www.treccani.it/enciclopedia/rettorica_%28Enciclopedia-Dantesca%29/"><w>rettorica</w></ref></distinct></orig><reg resp="#FR #IT"><w>retorica</w></reg></choice>. <del rend="overstrike" facs="#r7_corr2A_141" hand="author"><w>Grid</w></del> Recita: <said rend="pre() post(>>)" who="#En" aloud="true" direct="true"><supplied facs="#r7_corr2C_141" reason="omitted-in-original">"</supplied>O giornate del nostro
+                    <lb xml:id="lb8_141" facs="#r8_141" />
+                    riscatto</said> dopo di che passa le giornate del suo riscatto
+                    <lb xml:id="lb9_141" facs="#r9_141" />
+                    a <placeName facs="#r9_place1_141"><ref target="#TP">Torre</ref></placeName>, con tutte le <rs facs="#r9_persCom1_141" type="person">ragazzine</rs>, che gli hanno regalato
+                    <lb xml:id="lb10_141" facs="#r10_141" />
+                    lo <distinct type="slang"><ref target="https://www.treccani.it/vocabolario/scolo/">scolo</ref></distinct>. L’altro giorno mi ha fermato da <persName full="abb">More’</persName> per
+                    <lb xml:id="lb11_141" facs="#r11_141" />
+                    chiedermi ad alta voce <said toWhom="#EA" who="#En" aloud="true" direct="false">quando sarei salito alla <rs facs="#r11_placeCom3_141 #r12_placeCom3_141" type="place">sua
+                    <lb xml:id="lb12_141" facs="#r12_141" />
+                    base</rs></said>. Ha litigato con i <rs facs="#r12_persCom2_141" type="person">politici</rs>, prima della mia venuta<choice><sic facs="#r12_corr3C_141"><c>,</c></sic><corr resp="#FR #IT"><c>;</c></corr></choice>
+                    <lb xml:id="lb13_141" facs="#r13_141" />
+                    dai <rs facs="#r13_persCom3_141" type="person">soldati</rs> non sa farsi ubbidire e intanto si dà delle
+                    <lb xml:id="lb14_141" facs="#r14_141" />
+                    arie che lo rendono odioso<choice><sic facs="#r14_corr4C_141"><c>,</c></sic><corr resp="#FR #IT"><c>;</c></corr></choice> i <rs facs="#r14_persCom4_141" type="person">superiori militari</rs> sono
+                    <lb xml:id="lb15_141" facs="#r15_141" />
+                    stufi di lui per le continue assenze. <w><unclear facs="#r15_unclear2_141" cert="high" resp="#FR #IT" reason="ink" agent="ink" ><c>B</c></unclear>isogna</w> mandarlo
+                    <lb xml:id="lb16_141" facs="#r16_141" />
+                    via, ma c’è pericolo che, licenziato, racconti in giro
+                    <lb xml:id="lb17_141" facs="#r17_141" />
+                    quanto deve tacere. Se lo si rimprovera, punto per punto
+                    <lb xml:id="lb18_141" facs="#r18_141" />
+                    mostrerà di aver ragione, ma chi è inviso a tutti non
+                    <lb xml:id="lb19_141" facs="#r19_141" />
+                    può non aver torto. Poi si è parlato della tregua e dei
+                    <lb xml:id="lb20_141" facs="#r20_141" />
+                    comandi, ma siccome la conversazione è stata ripresa, 
+                    <lb xml:id="lb21_141" facs="#r21_141" />
+                    ne parlerò dopo. In seguito sono salito alla <rs facs="#r21_placeCom4_141" type="place">base</rs>.
+                    <lb xml:id="lb22_141" facs="#r22_141" />
+                    Ho <w><unclear facs="#r22_unclear3_141" cert="high" resp="#FR #IT" reason="ink" agent="ink"><c>p</c></unclear>arlato</w> con i <rs facs="#r22_persCom5_141" type="person" >soldati</rs> di politica, distribuito
+                    <lb xml:id="lb23_141" facs="#r23_141" />
+                    stampati, promesso sussidi, fatto il rapporto del <rs facs="#r23_persCom6_141 #r24_persCom6_141" type="person" ><w>co=
+                    <lb xml:id="lb24_141" rend="double stroke" facs="#r24_141" break="no"  />
+                    mandante</w></rs><choice><abbr type="suspension"> <w>ecc</w></abbr><expan resp="#FR #IT"> <w>ecc<ex>etera</ex></w></expan></choice>; <del rend="overstrike" facs="#r24_corr3A_141" hand="author"><w>ma</w></del><del rend="overstrike" facs="#r24_corr4A_141" hand="author"><gap unit="chars" extent="1" reason="cancelled" agent="ink" /></del> vedo quanta ragione avevo
+                    <lb xml:id="lb25_141" facs="#r25_141" />
+                    avuto due <del rend="overstrike" facs="#r25_corr5A_141" hand="author"><gap unit="char" extent="1" reason="cancelled"  agent="ink" /></del> <num type="cardinal" value="3">tre</num> settimane fa, quando non mi fu
+                    <lb xml:id="lb26_141" facs="#r26_141" />
+                    dato retta. Erano venuti da <placeName facs="#r26_place2_141"><ref target="#BA">Barge</ref></placeName> <num type="cardinal">10</num> <rs facs="#r26_persCom7_141" type="person"><ref target="#banda_p2">uomini</ref></rs>, che <rs facs="r26_persCom8_141" type="person"><ref target="#EA">io</ref></rs>
+                    <lb xml:id="lb27_141" facs="#r27_141" />
+                    conoscevo benissimo e sapevo che sarebbero stati un <w>ele=
+                    <lb xml:id="lb28_141" rend="double stroke" facs="#r28_141" break="no" />
+                    mento</w> di disordine. Anzitutto mentre i  <rs facs="#r28_persCom9_141" type="person"><ref target="#banda_p1">nostri uomini</ref></rs> sono
+                    <lb xml:id="lb29_141" facs="#r29_141" />
+                    piuttosto educati, quelli avevano un linguaggio e un 
+                    <lb xml:id="lb30_141" facs="#r30_141" />
+                    contegno da caserma insopportabile<choice><sic facs="#r30_corr5C_141"><c>,</c></sic><corr resp="#FR #IT"><c>;</c></corr></choice> in secondo luogo
+                    <lb xml:id="lb31_141" facs="#r31_141" />
+                    erano pieni di soldi rispetto ai <rs facs="#r31_persCom10_141" type="person"><ref target="#banda_p1"> nostri poveri</ref></rs><choice><sic facs="#r31_corr6C_141"><c>,</c></sic><corr resp="#FR #IT"><c>;</c></corr></choice> in <choice><sic facs="#r31_corr7C_141"><num type="cardinal">3</num></sic><corr resp="#FR #IT"> <w>terzo</w></corr> </choice> luogo
+                </ab>
+            </div>
+
+            <div type="page" n="142">
+            <!-- Seconda pagina (142)-->
+                <pb xml:id="pag2" n="2" facs="#scan_p142"/>
+                <!-- Continuo della pagina di diario del 2 febbraio -->
+                <ab n="1">
+                    <lb xml:id="lb1_142" facs="#r1_142" />
+                    <del rend="overstrike" facs="#r1_corr1A_142" hand="author"><w>venendo</w></del> durante la strada avevano trovato delle <rs facs="#r1_PersCom1_142" type="person">donne</rs>, 
+                    <lb xml:id="lb2_142" facs="#r2_142" />
+                    naturalmente se le erano godute, e ora facevano le più
+                    <lb xml:id="lb3_142" facs="#r3_142" />
+                    appetitose descrizioni ai nostri costretti alla castità.
+                    <lb xml:id="lb4_142" facs="#r4_142" />
+                    L’ultimo punto è il più <w>important<choice><sic facs="#r4_corr1C_142"><c>i</c></sic><corr resp="#FR #IT"><c>e</c></corr></choice></w>. Facevano la più
+                    <lb xml:id="lb5_142" facs="#r5_142" />
+                    triviale propaganda <choice> <abbr type="suspension"><term><ref target="#term_com"><w>com</w></ref></term></abbr> <expan resp="#FR #IT"> <w>com<ex>unista</ex></w></expan></choice>, dichiarando che <said toWhom="#banda_p1" who="#banda_p2" aloud="true" direct="false" >l’<placeName facs="#r5_country1_142 #r6_country1_142"><country><w>Inghil=
+                    <lb xml:id="lb6_142" rend="double stroke" facs="#r6_142" break="no" />
+                    terra</w></country></placeName> fa schifo e che bisogna prendere i soldi dei ricchi.</said>
+                    <lb xml:id="lb7_142" facs="#r7_142" />
+                    Ancora si vantavano delle loro prodezze e dicevano: 
+                    <lb xml:id="lb8_142" facs="#r8_142" />
+                    <said toWhom="#banda_p1" who="#banda_p2" aloud="true" direct="true"><supplied facs="#r8_corr2C_142" resp="#FR #IT" reason="omitted-in-original" >"</supplied><w><choice><sic facs="#r8_corr3C_142"><c>s</c></sic><corr resp="#FR #IT"><c>S</c></corr></choice>e</w> manca il grano lo andremo a prendere <rs facs="#r8_persCom2_142" type="person"><ref target="#banda_p2">noi</ref></rs> perché
+                    <lb xml:id="lb9_142" facs="#r9_142" />
+                    voi <del rend="overstrike" facs="#r9_corr2A_142" hand="author"><unclear facs="#r9_unclear_142" cert="low" resp="#FR #IT" reason="ink" agent="ink"><w>siene</w></unclear></del> avete paura<supplied facs="#r8_corr4C_142" resp="#FR #IT" reason="omitted-in-original" >"</supplied></said>. <rs facs="#r9_persCom_142" type="person"><ref target="#EA">Io</ref></rs> avevo proposto <said toWhom="#banda_p1" who="#EA" aloud="true" direct="false">di trattarli
+                    <lb xml:id="lb10_142" facs="#r10_142" />
+                    molto bene, ma di <w>sci<unclear facs="#r10_unclear1_142" reason="eccentric_ductus"><c>o</c></unclear>gliere</w> il gruppo</said>. Naturalmente 
+                    <lb xml:id="lb11_142" facs="#r11_142" />
+                    <persName facs="#r11_pers1_142" full="abb"><ref target="#Ro">Rob.</ref></persName> non <w><unclear facs="#r11_unclear2_142" cert="high" resp="#FR #IT" reason="ink" agent="ink"><c>m</c></unclear>i</w> ascoltò. Risultati: hanno comprato dai
+                    <lb xml:id="lb12_142" facs="#r12_142" />
+                    nostri degli indumenti. I nostri si sono <w>bevut<choice><sic facs="#r12_corr5C_142"><c>o</c></sic><corr resp="#FR #IT"><c>i</c></corr></choice></w> il denaro
+                    <lb xml:id="lb13_142" facs="#r13_142" />
+                    e ora non hanno da vestirsi. <w><unclear facs="#r13_unclear3_142" cert="high" resp="#FR #IT" reason="ink" agent="ink"><c>D</c></unclear>opo</w> un’azione condotta
+                    <lb xml:id="lb14_142" facs="#r14_142" />
+                    male per colpa di <persName facs="#r14_pers2_142"><ref target="#En"><forename>Enzo</forename></ref></persName> hanno mandato (<persName facs="#r14_pers3_142"><ref target="#Os"><forename>Oscar</forename></ref></persName>) un 
+                    <lb xml:id="lb15_142" facs="#r15_142" />
+                    insolente biglietto a <persName facs="#r15_pers4_142"><ref target="#Ma"><forename>Mario</forename></ref></persName> dichiarando che <q toWhom="#Ma" who="#banda_p2" type="written">se ne <w>an=
+                    <lb xml:id="lb16_142" rend="double stroke" facs="#r16_142" break="no" />
+                    davano</w> perché erano soliti ad essere comandati in
+                    <lb xml:id="lb17_142" facs="#r17_142" />
+                    ben altro modo</q> e sono partiti <w><unclear facs="#r17_unclear4_142" cert="high" resp="#FR #IT" reason="eccentric_ductus" agent="ink"><c>s</c></unclear>cambiando</w> i <subst hand="author"><del rend="overstrike" facs="#r17_corr3A_142"><w>fucili</w></del><add facs="#r17_corr4A_142" place="above"> <w>manufatti</w></add></subst>
+                    <lb xml:id="lb18_142" facs="#r18_142" />
+                    per prendersi i migliori, pare rubando del tabacco e
+                    <lb xml:id="lb19_142" facs="#r19_142" />
+                    <del rend="overstrike" facs="#19_corr5A_142" hand="author"><gap unit="word" extent="1" reason="cancelled" agent="ink" /></del>conducendo con se <rs facs="#r19_persCom4_142" type="person"><num type="cardinal" value="2">due</num> dei nostri</rs> che hanno <w>diser=
+                    <lb xml:id="lb20_142" rend="double stroke" facs="#r20_142" break="no" />
+                    tato</w> dalla loro parte. <num type="ordinal" value="3">Terzo</num>: <rs facs="#r20_persCom5_142" type="person"><ref target="#banda_p1">tutti gli uomini del gruppo</ref></rs>
+                    <lb xml:id="lb21_142" facs="#r21_142" />
+                    ora <subst hand="author"> <del rend="overstrike" facs="#r21_corr6A_142">sono</del> <add facs="#r21_corr7A_142" place="above">si dicono</add></subst> <choice> <abbr type="suspension"><ref target="#term_com"><w>com</w></ref></abbr> <expan resp="#FR #IT"> <w>com<ex>unisti</ex></w></expan></choice>. <rs facs="#r21_persCom6_142" type="person"><ref target="#EA">Io</ref></rs> non ho tempo di raddrizzare le idee, 
+                    <lb xml:id="lb22_142" facs="#r22_142" />
+                    ma so che <said who="#EA" aloud="false" direct="false">la loro convin<subst facs="#r22_corr8A_142"><del rend="overtype" hand="author"><c>s</c></del><add place="inline"><c>z</c></add></subst>ione è così fondata che se <rs facs="#r22_persCom7_142" type="person"><ref target="#EA">io</ref></rs> 
+                    <lb xml:id="lb23_142" facs="#r23_142" />
+                    dicessi loro il programma <term><ref target="#term_soc">socialista</ref></term> e affermassi che è
+                    <lb xml:id="lb24_142" facs="#r24_142" />
+                    <term><ref target="#term_com">comunismo</ref></term>, ci crederebbero a occhi chiusi</said>.
+                    <lb xml:id="lb25_142" facs="#r25_142" />
+                    Sceso dalla <rs facs="#r25_placeCom1_142" type="place">base</rs>, andai in una <rs facs="#r25_placeCom2_142" type="place">fattoria</rs>, dove il generoso
+                    <lb xml:id="lb26_142" facs="#r26_142" />
+                    <rs facs="#r26_persCom8_142" type="person">padrone</rs> <del rend="overstrike" facs="#r26_corr9A_142" hand="author"><w>durante</w></del> dopo le discussioni offre sontuose
+                    <lb xml:id="lb27_142" facs="#r27_142" />
+                    merende di pane bianco, squisito salame e vino <w>imbotti=
+                    <lb xml:id="lb28_142" rend="double stroke" facs="#r28_142" break="no"  />
+                    gliato</w>. Quando porta il canestro, <w>t<unclear facs="#r28_unclear5_142" cert="high" resp="#FR #IT" reason="ink" agent="ink" ><c>u</c></unclear>tti</w> fingono di 
+                    <lb xml:id="lb29_142" facs="#r29_142" />
+                    discutere ma con la coda dell’occhio guardano 
+                    <lb xml:id="lb30_142" facs="#r30_142" />
+                    che cosa arriva e cercano di reprimere un sorriso 
+                    <lb xml:id="lb31_142" facs="#r31_142" />
+                    molto soddisfatto. Si è parlato della tregua proposta
+                    <lb xml:id="lb32_142" facs="#r32_142" />
+                    <w>da<del rend="overstrike" facs="#r32_corr10A_142" hand="author">gl</del>i</w> <rs facs="#r32_persCom9_142" type="person">nemici</rs>, prima ufficiosamente, ma l’altra sera 
+                    <lb xml:id="lb33_142" facs="#r33_142" />
+                    <unclear facs="#r33_unclear6_142" cert="high" resp="#FR #IT" reason="ink" agent="ink"><w>i</w></unclear> <rs facs="#r33_persCom10_142" type="person">podestà di <placeName facs="#r33_place1_142"><ref target="#TP">Torre</ref></placeName> e di <placeName facs="#r33_place2_142"><ref target="#LS">Luserna</ref></placeName></rs>, con salvacondotto <term><ref target="#term_fasc"><w>fasci=
+                    <lb xml:id="lb34_142" rend="double stroke" facs="#r34_142" break="no" />
+                    sta</w></ref></term> andarono dal <rs facs="#r34_persCom11_142" type="person" ><ref target="#col_142"><abbr type="suspension"><w>colonn</w></abbr></ref> <expan resp="#FR #IT"><w>colonn<ex>ello</ex></w></expan></rs> e gli dissero che <said toWhom="#col_142" aloud="true" direct="false"><q>se i <rs facs="#r34_persCom12_142" type="person"><term><ref target="#term_part">partigiani</ref></term></rs>
+                    <lb xml:id="lb35_142" facs="#r35_142" />
+                    avessero interrotto la guerriglia, avrebbero lasciato la <rs facs="#r35_placeCom3_142" type="place">valle</rs>
+                    <lb xml:id="lb36_142" facs="#r36_142" />
+                    <del rend="overstrike" facs="#r36_corr11A_142" hand="author"><gap unit="char" extent="1" reason="cancelled" agent="ink" /></del>a <rs facs="#r36_persCom13_142" type="person"><ref target="#banda_p1">noi</ref></rs>, ritirato la <rs facs="#r36_persCom14_142" type="person"><term><ref target="#term_mil">milizia</ref></term></rs> da <placeName facs="#r36_place3_142"><ref target="#BP">Bobbio</ref></placeName>, dato <choice><sic facs="#r36_corr6C_142"><w>iviveri</w></sic><corr resp="#FR #IT"><w>i</w> <w>viveri</w></corr></choice> e il
+                    <lb xml:id="lb37_142" facs="#r37_142" />
+                    porto d’armi</q></said>, in che più altre parole significa che avrebbero
+                </ab>
+            </div>
+
+            <div type="page" n="143">
+
+            <!-- Terza pagina (143)-->
+                <pb n="3" facs="#scan_p143"/>
+                <!-- Continuo della pagina di diario del 2 febbraio -->
+                <ab n="1">
+                    <lb xml:id="lb1_143" facs="#r1_143" />
+                    cercato di sapere il nostro numero. Intanto fanno <w>pressio=
+                    <lb xml:id="lb2_143" rend="double stroke" facs="#r2_143" break="no" />
+                    ni</w> sulle <rs facs="#r2_persCom1_143" type="person" >famiglie dei prigionieri</rs>. Ricatto e frode: <w>meto=
+                    <lb xml:id="lb3_143" rend="double stroke" facs="#r3_143" break="no" />
+                    do</w> <term><ref target="#term_naz">nazista</ref></term>, già usato con <placeName facs="#r3_country1_143"><country>Austria</country></placeName>, <placeName facs="#r3_country2_143"><country>Polonia</country></placeName>, <placeName facs="#r3_country3_143"><country>Cecoslovacchia</country></placeName>,
+                    <lb xml:id="lb4_143" facs="#r4_143" />
+                    <placeName facs="#r4_country4_143"><country>Inghilterra</country></placeName> <choice><abbr type="suspension"><w>ecc</w></abbr> <expan resp="#FR #IT"> <w>ecc<ex>etera</ex></w></expan></choice>. <del rend="overstrike" facs="#r4_corr1A_143" hand="author"><seg>E’ mal</seg></del> Ci lasciano la polizia della 
+                    <lb xml:id="lb5_143" facs="#r5_143" />
+                    <rs facs="#r5_placeCom1_143" type="place">valle</rs>, ma il giorno che farà <rs facs="#r5_persCom2_143" type="person">loro</rs> comodo, <del rend="overstrike" facs="#r5_corr2A_143" hand="author"><w>prepar<unclear facs="#r5_unclear1_143" cert="medium" resp="#FR #IT" reason="ink" agent="ink"><c>a</c></unclear></w></del><del rend="overstrike" facs="#r5_corr3A_143" hand="author"><gap  unit="char" extent="1" reason="cancelled" agent="ink"/></del>
+                    <lb xml:id="lb6_143" facs="#r6_143" />
+                    compiranno un assassinio e, siccome <rs facs="#r6_persCom3_143" ref="#banda_p1" type="person">noi</rs> dopo <num type="cardinal">5</num> minuti non 
+                    <lb xml:id="lb7_143" facs="#r7_143" />
+                    avremo arrestato il colpevole, dichiarandoci incapaci di 
+                    <lb xml:id="lb8_143" facs="#r8_143" />
+                    tenere l’ordine, torneranno su in <num type="cardinal">2 000</num> per tenerlo <rs facs="#r8_persCom4_143" type="person">loro</rs>. 
+                    <lb xml:id="lb9_143" facs="#r9_143" />
+                    Abbiamo <w><unclear facs="#r9_unclear2_143" cert="high" resp="#FR #IT" reason="faded" agent="ink"><c>d</c></unclear>eciso</w> di rispondere che <said who="#banda_p1" aloud="true" direct="false">non trattiamo e che, se 
+                    <lb xml:id="lb10_143" facs="#r10_143" />
+                    si ritirano dalla <rs facs="#r5_placeCom2_143" type="place">valle</rs>, riscontreremo la situazione
+                    <lb xml:id="lb11_143" facs="#r11_143" />
+                    <foreign xml:lang="la"><ref target="https://www.treccani.it/vocabolario/de-facto/">de facto</ref></foreign> e, naturalmente la <rs facs="#r11_placeCom3_143" type="place">valle</rs> sarà tranquilla</said>. E’
+                    <lb xml:id="lb12_143" facs="#r12_143" />
+                    chiaro che i <rs facs="#r12_persCom5_143" type="person">Podestà</rs> saranno molto contenti che se ne 
+                    <lb xml:id="lb13_143" facs="#r13_143" />
+                    vadano e faranno tutto il possibile per ottenerlo. <rs facs="#r13_persCom6_143" type="person"><ref target="#banda_p1">Noi</ref></rs>, se
+                    <lb xml:id="lb14_143" facs="#r14_143" />
+                    liberi, comincieremo nelle <rs facs="#r14_placeCom4_143" type="place">aziende</rs>, nei giornali, nelle 
+                    <lb xml:id="lb15_143" facs="#r15_143" />
+                    <rs facs="#r15_placeCom5_143" type="place">scuole</rs> la rivoluzione popolare italiana e il governo dell’<term><ref target="#term_interp"><w>in=
+                    <lb xml:id="lb16_143" rend="double stroke" facs="#r16_143" break="no" />
+                    terpartito</w></ref></term> una parte dell’<placeName facs="#r16_country5_143"><country>Italia</country></placeName> sarà liberata. Tutto
+                    <lb xml:id="lb17_143" facs="#r17_143" />
+                    questo però suscita una domanda: <said who="#EA" aloud="false" direct="true">perché un mese fa si 
+                    <lb xml:id="lb18_143" facs="#r18_143" />
+                    compiva <del rend="overstrike" facs="#r18_corr4A_143" hand="author"><seg>l’a</seg></del> il rastrellamento di <placeName facs="#r18_place1_143"><ref target="#BA">Bar<unclear facs="#r18_unclear3_143" cert="high" resp="#FR #IT" reason="ink" agent="ink"><c>g</c><c>e</c></unclear></ref></placeName> e ora si propongono
+                    <lb xml:id="lb19_143" facs="#r19_143" />
+                    le <placeName facs="#r19_place2_143"><ref target="#OR">Oregne?</ref></placeName> Perché evidentemente la situazione generale
+                    <lb xml:id="lb20_143" facs="#r20_143" />
+                    dei <choice><abbr type="suspension"><rs facs="#r20_persCom7_143" type="person"><w>Ted</w></rs></abbr> <expan resp="#FR #IT"> <w>Ted<ex>eschi</ex></w></expan></choice> è peggiorata enormemente, <choice><sic facs="#r20_corr1C_143">perché</sic><corr resp="#FR #IT">dal momento che:</corr></choice> speravano 
+                    <lb xml:id="lb21_143" facs="#r21_143" />
+                    che il freddo ci disperdesse, mentre il Padre Eterno, da
+                    <lb xml:id="lb22_143" facs="#r22_143" />
+                    buon <term><ref target="#term_part">partigiano</ref></term>, ormai da <num type="cardinal">40</num> giorni tiene un tempo splendi<unclear facs="#r22_unclear4_143" cert="high" resp="#FR #IT" reason="ink" agent="ink"><c>d</c><c>o</c></unclear><choice><sic facs="#r22_corr2C_143 #r23_corr3C_143">,
+                    <lb xml:id="lb23_143" facs="#r23_143" />
+                    perché</sic><corr resp="#FR #IT">;</corr></choice> <choice><sic facs="#r23_corrC4_143">han</sic><corr resp="#FR #IT">hanno</corr></choice> capito che per rastrellare una <rs facs="#r23_placeCom6_143" type="place">valle</rs> occorrono
+                    <lb xml:id="lb24_143" facs="#r24_143" />
+                    <num type="cardinal">30 000</num> uomini per una settimana, se l’opera ha da essere efficace<choice><sic facs="#r24_corr5C_143 #r25_corr6C_143">,
+                    <lb xml:id="lb25_143" facs="#r25_143" />
+                    perché</sic><corr resp="#FR #IT">;</corr></choice> infine lo sbarco è imminente, e vogliono avere le
+                    <lb xml:id="lb26_143" facs="#r26_143" />
+                    spalle sicure: lo sbarco, che secondo informazioni <w>riserva=
+                    <lb xml:id="lb27_143" rend="double stroke" facs="#r27_143" break="no" />
+                    tissime</w> <w><choice><sic facs="#r27_corr7C_143"><c>S</c></sic><corr resp="#FR #IT"><c>s</c></corr></choice>vizzere</w>, potrebbe avvenire anche a <placeName facs="#27_place3_143"><ref target="#TR">Trieste</ref></placeName>, di modo 
+                    <lb xml:id="lb28_143" facs="#r28_143" />
+                    che il <w><choice><sic facs="#r28_corr8C_143">terristorio</sic><corr resp="#FR #IT">territorio</corr></choice></w> stesso tedesco sarebbe minacciato <w><unclear facs="#r28_unclear5_143" cert="high" resp="#FR #IT" reason="ink" agent="ink"><c>d</c></unclear>i
+                    <lb xml:id="lb29_143" rend="double stroke" facs="#r29_143" break="no" />
+                    rettamente</w> e <placeName facs="#r29_place4_143"><geogName><ref target="#VP">la <geogFeat>valle</geogFeat> del Po</ref></geogName></placeName> indifendibile.</said> Il <rs facs="#r29_perCom8_143" type="person">professore</rs>
+                    <lb xml:id="lb30_143" facs="#r30_143" />
+                    della istitutrice ha letto un manifesto che, approvato <w>dal=
+                    <lb xml:id="lb31_143" rend="double stroke" facs="#r31_143" break="no" />
+                    l’</w><term><ref target="#term_interp">interpartito</ref></term>, verrà distribuito alla <rs facs="#r31_perCom9_143" type="person">popolazione</rs> per <w>spie=
+                    <lb xml:id="lb32_143" rend="double stroke" facs="#r32_143" break="no" />
+                    gare</w> le cause del nostro rifiuto.
+                    <lb xml:id="lb33_143" facs="#r33_143" />
+                    <del rend="overstrike" facs="#r33_corr5A_143" hand="author"><gap  unit="char" atLeast="2" atMost="3" reason="cancelled" agent="ink"/></del><persName facs="#r33_pers1_143" full="abb"><ref target="#Ro">Rob</ref></persName> ha assalito la <rs facs="#r33_placeCom7_143" type="place">caserma</rs> di <placeName facs="#r33_place5_143"><ref target="#PR">Prali</ref></placeName> e sconfitto 
+                    <lb xml:id="lb34_143" facs="#r34_143" />
+                    la piccola <rs facs="#r34_persCom10_143" type="person">guarnigione di <term><ref target="#term_mil">militi</ref></term></rs> che occupava il <rs facs="#r34_placeCom8_143" type="place">fortino</rs>. 
+                </ab>
+            </div>
+
+            <div type="page" n="144">
+            <!-- Quarta pagina (144)-->
+                <pb n="4" facs="#scan_p144"/>
+                <!-- Continuo della pagina di diario del 2 febbraio -->
+                <ab n="1">
+                    <lb xml:id="lb1_144" facs="#r1_144" />
+                    L’ho saputo confidenzialmente. Uscendo ho avuto un
+                    <lb xml:id="lb2_144" facs="#r2_144" />
+                    colloquio con <persName facs="#r2_pers1_144"><ref target="#LB"><forename full="init">L.</forename><surname full="init">B<supplied facs="#r2_corr1C_144" resp="#FR #IT" reason="omitted_in_original">.</supplied></surname></ref></persName> sul problema dei comandi. <date when="1943-02-01">Ieri</date> pare
+                    <lb xml:id="lb3_144" facs="#r3_144" />
+                    siano giunti <persName facs="#r3_per2_144" full="init"><ref target="#G">G<supplied facs="#r3_corr2C_144" resp="#FR #IT" reason="omitted_in_original">.</supplied></ref></persName> e <persName facs="#r3_pers3_144" full="init"><ref target="#Z">Z.</ref></persName> Con <persName facs="#r3_pers4_144" full="init"><ref target="#Z">Z.</ref></persName> abbiamo il grande soldato
+                    <lb xml:id="lb4_144" facs="#r4_144" />
+                    che si reclamava per <w>i<del rend="overstrike" facs="#r4_corr1A_144" hand="author"><c>l</c></del></w> <w>futur<subst facs="#r4_corr2A_144" hand="author"><del rend="overtype" ><c>o</c></del><add place="inline"><c>i</c></add></subst></w> combattimenti, ma
+                    <lb xml:id="lb5_144" facs="#r5_144" />
+                    <del rend="overstrike" facs="#r5_corr3A_144" hand="author"><seg>pare che</seg></del> pare che non basti. Ecco di che cosa si tratta. 
+                    <lb xml:id="lb6_144" facs="#r6_144" />
+                    <said who="#EA" aloud="false" direct="true">Riconosciuta la necessità di un comando unico e fisso, chi
+                    <lb xml:id="lb7_144" facs="#r7_144" />
+                    lo dovrà comporre?</said> <rs xml:id="banda_p1p" facs="r7_persCom1_144" type="person">Quanti si oppongono</rs> all’<term><ref target="#term_auto">autocrazia</ref></term>
+                    <lb xml:id="lb8_144" facs="#r8_144" />
+                    di <persName facs="#r8_pers5_144" full="abb"><ref target="#Ro">Rob.</ref></persName> chiedono <said who="#banda_p1p" aloud="true" direct="false">una larga base: <rs facs="#r8_persCom2_144" type="person"><ref target="#col_142"><abbr type="suspension"><w>colon</w></abbr></ref> <expan resp="#FR #IT"><w>colon<ex>nello</ex></w></expan></rs>, <persName facs="#r8_pers6_144" full="abb"><ref target="#Ro">Rob.</ref></persName><supplied facs="#r8_corr3C_144" resp="#FR #IT" reason="omitted_in_original">,</supplied> <persName facs="#r8_pers7_144" full="abb"><ref target="#Pre">Pre.</ref></persName><supplied facs="#r8_corr4C_144" resp="#FR #IT" reason="omitted_in_original">,</supplied> <persName facs="#r8_pers7_144"><ref target="#Ma"><forename>Mario</forename></ref></persName>
+                    <lb xml:id="lb9_144" facs="#r9_144" />
+                    e <rs facs="#r9_persCom3_144" type="person"><ref target="#EA">io</ref></rs> come <abbr type="suspension"><w>pol<am>.</am></w></abbr> <expan resp="#FR #IT"><w>pol<ex>itici</ex></w></expan> non si accontentano</said>; <del rend="overstrike" facs="#r9_corr4A_144" hand="author"><seg>ma dicono</seg></del> <persName facs="#r9_pers9_144"><ref target="#Si"><forename>Silvio</forename></ref></persName> <w>di=
+                    <lb xml:id="lb10_144" rend="double stroke" facs="#r10_144" break="no" />
+                    chiara</w> che <said who="#Si" aloud="true" direct="false"><persName facs="#r10_pers10_144"><ref target="#Ma"><forename>Mario</forename></ref></persName>, debole e ombroso, si troverebbe solo e,
+                    <lb xml:id="lb11_144" facs="#r11_144" />
+                    evidentemente <del rend="overstrike" facs="#r11_corr5A_144" hand="author"><w>per</w></del> anche per ambizione personale, vorrebbe
+                    <lb xml:id="lb12_144" facs="#r12_144" />
+                    la presenza sua e di <persName facs="#r12_pers11_144"><ref target="#LB"><forename full="init">L.</forename><surname full="init">B.</surname></ref></persName></said> <del rend="overstrike" facs="#r6A_144" hand="author"><gap unit="char" extent="1" reason="cancelled" agent="ink"></gap></del> Il <rs facs="#r12_persCom4_144" type="person"><ref target="#col_142"><abbr type="suspension"><w>colonn</w></abbr></ref> <expan resp="#FR #IT"><w>colonn<ex>ello</ex></w></expan></rs> ha ricevuto <persName facs="#r12_pers12_144"><ref target="#Si"><forename>Silvio</forename></ref></persName> e
+                    <lb xml:id="lb13_144" facs="#r13_144" />
+                    <rs facs="#r13_persCom5_144" type="person"><ref target="#banda_p1">altri</ref></rs> che gli hanno chiesto <said toWhom="#col_142" who="#Si #banda_p1" aloud="true" direct="false">un colloquio</said> e, quando <rs facs="#r13_persCom6_144" type="person"><ref target="#banda_p1">essi</ref></rs>
+                    <lb xml:id="lb14_144" facs="#r14_144" />
+                    hanno criticato <persName facs="#r14_pers13_144" full="abb"><ref target="#Ro">Rob.</ref></persName>, li ha mandati via malamente,
+                    <lb xml:id="lb15_144" facs="#r15_144" />
+                    <subst hand="author"><del rend="overstrike" facs="#r15_corr7A_144"><seg>dicendo che non si poteva</seg></del> <add facs="#r15_corr8A_144" place="above"><seg>rimproverandoli di</seg></add></subst> <said toWhom="#Si #altri" who="#col_142" aloud="true" direct="false">parlare di <persName facs="#r14_pers14_144" full="abb"><ref target="#Ro">Rob.</ref></persName> mentre questi 
+                    <lb xml:id="lb16_144" facs="#r16_144" />
+                    <del rend="overstrike" facs="#r16_corr9A_144" hand="author"><unclear cert="low" resp="#FR #IT" reason="ink" agent="ink"><w>ora</w></unclear></del> è assente</said>. <del rend="overstrike" facs="#r16_corr10A_144" hand="author"><seg><persName><ref target="#LB"><forename full="init">L.</forename><surname full="init">B</surname></ref></persName> e</seg></del> <rs facs="#r16_persCom7_144" type="person"><ref target="#EA">Io</ref></rs> so che <said who="#EA" aloud="false" direct="false"> il torto e la ragione non
+                    <lb xml:id="lb17_144" facs="#r17_144" />
+                    sono mai da una parte sola e quindi cerco di <w>con=
+                    <lb xml:id="lb18_144" rend="double stroke" facs="#r18_144" break="no" />
+                    ciliare</w> i termini</said>; so che <said who="#EA" aloud="false" direct="false">si tratta di una concentrazione 
+                    <lb xml:id="lb19_144" facs="#r19_144" />
+                    politica delle forze della valle, perché militarmente
+                    <lb xml:id="lb20_144" facs="#r20_144" />
+                    valgono poco tutti e poi ci sarà <del rend="overstrike" facs="#r20_corr11A_144" hand="author"> <gap unit="word" extent="1" reason="cancelled" agent="ink"></gap></del> <persName facs="#r20_pers15_144" full="init"><ref target="#Z">Z.</ref></persName></said> <del rend="overstrike" facs="#r20_corr12A_144" hand="author"><gap unit="char" extent="2" reason="cancelled" agent="ink"></gap></del> <date when="1943-02-02">Oggi</date> col 
+                    <lb xml:id="lb21_144" facs="#r21_144" />
+                    <rs facs="#r21_persCom8_144" type="person"><ref target="#col_142"><abbr type="suspension"><w>colonn</w></abbr></ref> <expan resp="#FR #IT"><w>colonn<ex>ello</ex></w></expan></rs> sosterrò <num type="cardinal">3</num> punti: necessità del comando fisso; 
+                    <lb xml:id="lb22_144" facs="#r22_144" />
+                    necessità di valorizzare <persName facs="#r22_pers16_144" full="init"><ref target="#Z">Z</ref></persName>, anche contro <persName facs="#r22_pers17_144" full="abb"><ref target="#Ro">Rob</ref></persName>; necessità
+                    <lb xml:id="lb23_144" facs="#r23_144" />
+                    di <del rend="overstrike" facs="#r23_corr13A_144"><seg>chiamare le for</seg></del> <del rend="overstrike" facs="#r23_corr14A_144" hand="author"> <gap unit="char" extent="1" reason="cancelled" agent="ink"></gap></del> raccogliere <w>tutt<subst facs="#r23_corr15A_144" hand="author"><del rend="overtype"><c>i</c></del><add place="inline"><c>e</c></add></subst></w> <del rend="overstrike" facs="#r23_corr16A_144"><seg>le fo</seg></del> le tendenze.
+                    <lb xml:id="lb24_144" facs="#r24_144" />
+                    A nome di <persName facs="#r24_pers18_144"><ref target="#LB"><forename full="init">L.</forename><surname full="init">B.</surname></ref></persName> accennerò anche ai vantaggi di 
+                    <lb xml:id="lb25_144" facs="#r25_144" />
+                    una esclusione sua e di <persName facs="#r25_pers19_144"><ref target="#Si"><forename>Silvio</forename></ref></persName>.
+                    <lb xml:id="lb26_144" facs="#r26_144" />s
+                    <date when="1943-02-03">Domani</date> <persName facs="#r26_pers20_144" full="abb"><ref target="#Fr">Fr.</ref></persName> tornerà da <del rend="overstrike" facs="#r26_corr17A_144" hand="author"><gap unit="word" extent="1" reason="cancelled" agent="ink"></gap></del> <w><unclear facs="#r26_unclear1_144" cert="low" resp="#FR #IT" reason="ink" agent="ink"><c>C</c></unclear>.</w> e mi porterà <w>no=
+                    <lb xml:id="lb27_144" rend="double stroke" facs="#r27_144" break="no" />
+                    tizie</w> da <rs facs="#r27_palceCom1_144" type="place">casa</rs>: speriamo che qualcuno venga presto a 
+                    <lb xml:id="lb28_144" facs="#r28_144" />
+                    trovarmi. Inoltre ho una grande speranza: che 
+                    <lb xml:id="lb29_144" facs="#r29_144" />
+                    <subst hand="author"><del rend="overstrike" facs="#r29_corr18A_144"><w>stamane</w></del> <add facs="#r29_corr19A_144" place="below"><seg>a pranzo o a cena</seg></add></subst> <persName facs="#r29_pers21_144" full="init"><ref target="#G">G.</ref></persName> venga a cercarmi. 
+
+                <!-- Fine della pagina di diario del 2 febbraio -->
+                </ab>
+            </div>
+
+            <div type="page" n="145">
+            <!-- Quinta pagina (145)-->
+                <pb n="5" facs="#scan_p145"/>
+                <!-- Inzio della pagina di diario del 3 febbraio -->
+                <dateline facs="#scan_data2"><date when="1943-02-03">3<choice><abbr type="suspension"> <w>febbr<am>.</am></w></abbr> <expan resp="#FR #IT"><w>febbr<ex>aio</ex></w></expan></choice></date></dateline>
+                <ab xml:id="giorno3feb" n="2">
+                    
+                    <lb xml:id="lb1_145" facs="#r1_145" />
+                    <date when="1943-02-02">Ieri</date> mattina mi svegliai nel morbidissimo <w>le<unclear facs="#r1_unclear1_145" cert="high" resp="#FR #IT" reason="ink" agent="ink"><c>t</c><c>t</c></unclear>o</w> dove  
+                    <lb xml:id="lb2_145" facs="#r2_145" /> 
+                    avevo dormito tutta la notte. La <rs xml:id="ospite" facs="#r2_persCom1_145" type="person">mia ospite</rs> è un’<w>otti=
+                    <lb xml:id="lb3_145" rend="double stroke" facs="#r3_145" break="no" /> 
+                    ma</w> persona. Quando avevo accennato a pagare si mostrò
+                    <lb xml:id="lb4_145" facs="#r4_145" /> 
+                    molto offesa. <del rend="overstrike" facs="#r3_corr1A_145" hand="author"><unclear cert="medium" resp="#FR #IT" reason="ink" agent="ink"><w>La</w></unclear></del> <num type="cardinal" value="20">Vent’</num>anni di <term><ref target="#term_fasc"><w>Fascismo</w></ref></term> l’hanno resa molto
+                    <lb xml:id="lb5_145" facs="#r5_145" /> 
+                    scettica: come molti <w><subst facs="#r5_corr2A_145" hand="author"><del rend="overtype"><c>i</c></del><add place="inline"><c>I</c></add></subst>taliani</w> non vuol sentire parlare di 
+                    <lb xml:id="lb6_145" facs="#r6_145" /> 
+                    politica e parte dal concetto che tutta la <abbr type="suspension"><w>polit</w></abbr> <expan resp="#FR #IT"><w>polit<ex>ica</ex></w></expan> è una 
+                    <lb xml:id="lb7_145" facs="#r7_145" /> 
+                    porcheria: questo è per <rs facs="#r7_persCom2_145" type="person"><ref target="#banda_p1">noi</ref></rs> sempre un grave ostacolo. 
+                    <lb xml:id="lb8_145" facs="#r8_145" /> 
+                    <del rend="overstrike" facs="#r8_corr3A_145" hand="author"><unclear cert="medium" resp="#FR #IT" reason="ink" agent="ink"><w>Però</w></unclear></del> Secondo <rs facs="#r8_persCom3_145" type="person"><ref target="#ospite">lei</ref></rs>, e lo dice chiaramente, <said who="#ospite" aloud="true" direct="false">nulla <supplied facs="#r8_corr1C_145" resp="#FR #IT" reason="omitted_in_original">è</supplied> meglio
+                    <lb xml:id="lb9_145" facs="#r9_145" /> 
+                    della vita tranquilla</said>. In pratica<supplied facs="#r9_corr2C_145" resp="#FR #IT" reason="omitted_in_original">,</supplied> però<supplied facs="#r9_corr3C_145" resp="#FR #IT" reason="omitted_in_original">,</supplied> è disposta a fare 
+                    <lb xml:id="lb10_145" facs="#r10_145" /> 
+                    e riconosce una contraddizione fra il suo pensiero e la 
+                    <lb xml:id="lb11_145" facs="#r11_145" /> 
+                    sua azione. Alla <rs facs="#r11_placeCom1_145" type="place">posta</rs> c’era una cartolina da <rs facs="#r11_placeCom2_145" type="place">casa</rs>. La 
+                    <lb xml:id="lb12_145" facs="#r12_145" /> 
+                    <rs facs="#r12_persCom4_145" type="person"><ref target="#AS">mamma</ref></rs> non ha nessuna idea della mia vita <term><ref target="#term_part">partigiana</ref></term>: 
+                    <lb xml:id="lb13_145" facs="#r13_145" /> 
+                    protesta perché scrivo solo dei saluti, senza pensare che
+                    <lb xml:id="lb14_145" facs="#r14_145" /> 
+                    non voglio uscire con lettere in tasca e che mi è <w>im=
+                    <lb xml:id="lb15_145" rend="double stroke" facs="#r15_145" break="no"/> 
+                    possibile</w> dire alcuna cosa fra quelle che fanno.
+                    <lb xml:id="lb16_145" facs="#r16_145" /> 
+                    Poi andai a <placeName facs="#r16_place1_145"><ref target="#LS">Luserna</ref></placeName> dalla staffetta di <persName facs="#r16_pers1_145" full="init"><ref target="#M">M</ref></persName> per 
+                    <lb xml:id="lb17_145" facs="#r17_145" /> 
+                    mandare un appuntamento a <persName facs="#r17_pers2_145" full="init"><ref target="#G">G</ref></persName> e l’<rs facs="#r17_persCom5_145" type="person">amico</rs> per le 
+                    <lb xml:id="lb18_145" facs="#r18_145" /> 
+                    <time when="12:00:00"><num type="ordinal">12</num></time>, le <time when="16:00:00"><num type="cardinal">16</num></time>, le <time when="19:00:00"><num type="cardinal">19</num></time>. <del rend="overstrike" facs="#r18_corr4A_145" hand="author"><seg>E' stata</seg> <unclear cert="low" resp="#FR #IT" reason="ink" agent="ink"><c>a</c><c>n</c></unclear></del> L’altra notte i <term><ref target="#term_part"><w>parti=
+                    <lb xml:id="lb19_145" rend="double stroke" facs="#r19_145" break="no" /> 
+                    giani</w></ref></term> entrarono <w>nel<del rend="overstrike" facs="#r19_corr5A_145" hand="author"><c>l</c><c>a</c></del></w> <rs facs="#r19_placeCom3_145">collegio</rs> della <abbr type="acronym"><ref target="#GIL">Gil</ref></abbr> <expan resp="#FR #IT">Gioventù Italiana del Littorio</expan> a <placeName facs="#r19_place2_145"><ref target="#LS">Luserna</ref></placeName>, 
+                    <lb xml:id="lb20_145" facs="#r20_145" /> 
+                    I <rs xml:id="bambini" facs="#r20_persCom6_145" type="person">bambini</rs> gridavano: <said who="#bambini" aloud="true" direct="true"><supplied facs="#r20_corr4C_145" resp="#FR #IT" reason="omitted_in_original">"</supplied>Viva i <rs facs="#r20_persCom7_145" type="person">patrioti</rs>, abbasso 
+                    <lb xml:id="lb21_145" facs="#r21_145" /> 
+                    <persName facs="#r21_pers3_145"><surname><ref target="#BM">Mussolini</ref></surname></persName><supplied facs="#r21_corr5C_145" resp="#FR #IT" reason="omitted_in_original">"</supplied></said> e <del rend="overstrike" facs="#r21_corr5A_145" hand="author"><w>davano</w></del> offrivano del pane. <date when="1943-02-02">Ieri</date> ci 
+                    <lb xml:id="lb22_145" facs="#r22_145" /> 
+                    furono anche dei disordini a <placeName facs="#r22_place3_145"><ref target="#BP">Bobbio</ref></placeName>, ma non ho 
+                    <lb xml:id="lb23_145" facs="#r23_145" /> 
+                    ancora notizie precise. 
+                    <lb xml:id="lb24_145" facs="#r24_145" />
+                    Di ritorno incontrai una <rs facs="#r24_persCom8_145" type="person">famiglia di conoscenti</rs>. <w><unclear facs="#r24_unclear2_145" cert="medium" resp="#FR #IT" reason="ink" agent="ink"><c>N</c>e</unclear></w>
+                    <lb xml:id="lb25_145" facs="#r25_145" /> 
+                    riparlerò. Pranzai con <persName facs="#r25_pers4_145" full="abb"><ref target="#Gu">Gu.</ref></persName> <del rend="overstrike" facs="#r25_corr6A_145" hand="author"><seg>E’ strano</seg></del> Si parlò di
+                </ab>
+            </div> 
+        </body>
+
+        <back>
+            <div type="orderedlist">
+                <!-- Elenco ordinato alfabeticamente -->
+
+                    <listPerson>
+                    <!-- Persone -->
+
+                        <!--Amalia Segre-->
+                        <person xml:id="AS" sex="F" age="senior">
+                           <p>
+                                <persName><forename>Amalia</forename> <surname>Segre</surname></persName>:
+                                <lb />
+                                <note source="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-017448/segre-amalia.html?persone=%22Segre%2C+Amalia%22">
+                                    madre dell'autore Emanuele Artom, nata a <placeName><settlement type="city"><ref target="#TO">Torino</ref></settlement> (<region>Piemonte</region>, <country> Italia </country>)</placeName> nel <date when="1890">1890</date>. 
+                                    Insegnante di professione, appartiene a lei la decisione di raccogliere e conservare le memorie del figlio, per poi donarle alla <orgName><ref target="#CDED">Fondazione CDEC</ref></orgName>.
+                                    Muore il <date when="1972-10-09">09 ottobre del 1972</date> nella sua città natale.
+                                </note>
+                            </p>
+                        </person>
+                        
+                        <!-- Mussolini -->
+                        <person xml:id="BM" sex="M" age="adult">
+                            <p>
+                                <persName><forename>Benito</forename> <surname>Mussolini</surname></persName>:
+                                <lb />
+                                <note source="https://www.treccani.it/enciclopedia/benito-mussolini/">
+                                    uomo politico nato a <placeName>Dovia di Predappio</placeName> il <date when="1883-07-29">29 luglio del 1883</date> e morto a <placeName>Giulino di Mezzegra</placeName> il <date when="1945-04-28">28 aprile del 1945</date>. 
+                                    Socialista, si andò staccando dal partito, fino a fondare i Fasci da combattimento nel <date when="1919">1919</date>. 
+                                    Subito dopo la “marcia su Roma” del <date when="1922">1922</date>, venne incaricato dal re della formazione del governo, instaurando nel giro di pochi anni un regime dittatoriale. 
+                                    In politica internazionale affrontò l’esperienza coloniale in <placeName>Etiopia</placeName>, si fece coinvolgere dai buoni rapporti con la <placeName>Germania</placeName> di <persName>Hitler</persName> nella persecuzione degli Ebrei, fino poi alla partecipazione al conflitto mondiale. 
+                                    Alla fine della guerra fu catturato e fucilato dai partigiani per ordine del <orgName>Comitato di liberazione nazionale</orgName>.
+                                </note>
+                            </p>
+                        </person>
+                        
+                        <!-- Colon. -->
+                        <person xml:id="col_142">
+                            <p>
+                                <persName>Ciochino</persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                colonnello della banda partigiana di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p> 
+                        </person>
+
+
+                        <!--Emanuele Artom-->
+                        <person xml:id="EA" sameAs="http://viaf.org/viaf/69734166" sex="M" age="adult">
+                           <p>
+                                <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>:
+                                <lb />
+                                <note source="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000015/artom-emanuele.html?persone=%22Artom%2C+Emanuele%22">
+                                    nasce ad <placeName><settlement type="city">Aosta</settlement> (<region>Valle D'Aosta</region>, <country>Italia</country>)</placeName> il <date when="1915-06-23">23 giugno 1915</date>, figlio di <persName><forename>Emilio</forename></persName> ed <persName><ref target="#AM"><forename>Amalia</forename> <surname>Segre</surname></ref></persName>. 
+                                    Antifascista, nel <date when="1943-05">maggio 1943</date> Artom si iscrive al <orgName>Partito d'Azione</orgName>. 
+                                    Dopo l'armistizio, con il nome di <persName><forename>Eugenio</forename> <surname>Ansaldi</surname></persName>, si arruola tra i partigiani come delegato azionista in una brigata garibaldina di <placeName><ref target="#BA">Barge</ref></placeName>. 
+                                    In seguito viene nominato commissario politico delle bande <orgName>"Italia Libera"</orgName> operanti in <placeName><geogName><geogFeat>Val</geogFeat> Pellice</geogName></placeName> e <placeName><geogName><geogFeat>Val</geogFeat> Germanasca</geogName></placeName>. 
+                                    Catturato dai fascisti nel <date when="1944-03">marzo 1944</date>, Artom viene consegnato ai tedeschi e rinchiuso nelle <placeName>Carceri Nuove di Torino</placeName>, dove il <date when="1944-04-07">7 aprile 1944</date> muore a causa delle torture inflittegli.
+                                </note>
+                            </p>
+                        </person>
+                        
+                        <!-- Enzo -->
+                        <person xml:id="En" sex="M" age="adult">
+                            <p>
+                                <persName><forename>Enzo</forename></persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                ufficiale e compagno partigiano di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p>
+                        </person>
+                        
+                        <!-- Fr. -->
+                        <person xml:id="Fr">
+                            <p>
+                                <persName>Frida</persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                persona che porta a <persName><forename>Emanuele</forename> <surname>Artom</surname></persName> notizie da casa.
+                                </note>
+                            </p>
+                        </person>
+                        
+                        <!-- G -->
+                        <person xml:id="G" sex="M" age="adult">
+                            <p>
+                                <persName><forename>Giorgio</forename> <surname>Segre</surname></persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                compagno partigiano di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p>  
+                        </person>
+                        
+                        <!-- Gu. -->
+                        <person xml:id="Gu">
+                            <p>
+                                <persName><forename>Gustavo</forename></persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                amico di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p> 
+                        </person>
+                        
+                        <!-- LB -->
+                        <person xml:id="LB" sex="M" age="adult">
+                            <p>
+                                <persName>Lo Bue</persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                compagno partigiano di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p> 
+                        </person>
+
+                        <!-- Mario -->
+                        <person xml:id="Ma" sex="M" age="adult">
+                            <p>
+                                <persName><forename>Mario</forename> <surname>Rivoir</surname></persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                compagno partigiano di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p>
+                        </person>
+                        
+                        <!-- M -->
+                        <person xml:id="M" sex="F">
+                           <p>
+                                <persName><forename>Martina</forename></persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                persona che si occupa della staffetta.
+                                </note>
+                            </p>    
+                        </person>
+                        
+                        <!-- Oscar -->
+                        <person xml:id="Os" sex="M" age="adult">
+                            <p>
+                                <persName><forename>Oscar</forename></persName>:
+                                <lb />
+                                <note>
+                                membro della banda composta dai dieci uomini venuti da <placeName><ref target="#BA">Barge</ref></placeName>.
+                                </note>
+                            </p> 
+                        </person>
+                        
+                        <!-- Roberto -->
+                        <person xml:id="Ro" sex="M" age="adult">
+                            <p>
+                                <persName><forename>Roberto</forename> <surname>Malan</surname></persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                compagno partigiano di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p>
+                        </person>
+
+                        <!-- Silvio -->
+                        <person xml:id="Si" sex="M" age="adult">
+                            <p>
+                                <persName><forename>Silvio</forename> <surname>Baridon</surname></persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                compagno partigiano di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p>
+                        </person>
+
+                        <!-- Z -->
+                        <person xml:id="Z" sex="M" age="adult">
+                            <p>
+                                <persName>Zama</persName>:
+                                <lb />
+                                <note source="https://www.rai.it/dl/doc/2021/04/20/1618946293361_artom_diari.pdf">
+                                compagno partigiano di <persName><forename>Emanuele</forename> <surname>Artom</surname></persName>.
+                                </note>
+                            </p>
+                        </person>
+     
+                </listPerson>
+
+                <!--Luoghi-->
+                <listPlace>
+                
+                    <!--Barge-->
+                        <place xml:id="BA">
+                            <p>
+                                <placeName>Barge
+                                    <lb />
+                                </placeName>
+                                <note>Comune italiano della provincia di <placeName><settlement type="city">Cuneo</settlement></placeName>, in <placeName>Piemonte</placeName>.
+                                    <lb />
+                                </note>
+                            </p>
+                            <p n="2">Per saperne di più clicca sulla mappa.</p>
+                        </place>
+                        
+                    <!--Bobbio Pellice-->
+                        <place xml:id="BP">
+                            <p>
+                                <placeName>Bobbio Pellice
+                                    <lb />
+                                </placeName>
+                                <note>comune italiano della città di <placeName><settlement type="city">Torino</settlement></placeName> in <placeName>Piemonte</placeName>. Si trova in <placeName><geogFeat>Val</geogFeat> <geogName>Pellice</geogName></placeName> e fa parte dell'<orgName>Unione Montana del Pinerolese</orgName>.
+                                    <lb />
+                                </note>
+                            </p>
+                            <p n="4">Per saperne di più clicca sulla mappa.</p>
+                        </place>
+                        
+                    <!--Luserna-->
+                        <place xml:id="LS">
+                            <p>
+                                <placeName>Luserna San Giovanni
+                                    <lb />
+                                </placeName>
+                                <note>Comune italiano della città di <placeName><settlement type="city">Torino</settlement></placeName> in <placeName>Piemonte</placeName>, localizzato in <placeName><geogFeat>Val</geogFeat> <geogName>Pellice</geogName></placeName>.
+                                    <lb />
+                                </note>
+                            </p>
+                            <p n="3">Per saperne di più clicca sulla mappa.</p>
+                        </place>
+                        
+                    <!--Oregne-->
+                        <place xml:id="OR">
+                            <p>
+                                <placeName>Oregne
+                                    <lb />
+                                </placeName>
+                                <note>fa parte del comune di <placeName>Sospirolo</placeName>, in provincia di <placeName><settlement type="city">Belluno</settlement></placeName>, nella regione <placeName>Veneto</placeName>.</note>
+                            </p>
+                        </place>
+
+                    <!--Prali-->
+                        <place xml:id="PR">
+                            <p>
+                                <placeName>Prali
+                                    <lb />
+                                </placeName>
+                                <note> comune italiano della città di <placeName><settlement type="city">Torino</settlement></placeName> in <placeName>Piemonte</placeName>.
+                                    <lb />
+                                </note>
+                            </p>
+                            <p n="4">Per saperne di più clicca sulla mappa.</p>
+                        </place>
+                    
+                    <!--Torino-->
+                        <place xml:id="TO">
+                            <p>
+                                <placeName>Torino
+                                    <lb />
+                                </placeName>
+                                
+                                <note>Comune italiano e capoluogo della regione <placeName>Piemonte</placeName>.</note>
+                            </p>
+                        </place>
+                        
+                    <!--Torre Pellice-->
+                        <place xml:id="TP">
+                            <p>
+                                <placeName>Torre Pellice
+                                    <lb />
+                                </placeName>
+                                
+                                <note>Comune italiano della città metropolitana di <placeName><settlement type="city">Torino</settlement></placeName>, nella <placeName><geogFeat>Val</geogFeat> <geogName>Pellice</geogName></placeName>, in <placeName>Piemonte</placeName>. 
+                                La sua storia e il suo territorio sono legati al comune adiacente, <placeName>Luserna San Giovanni</placeName>.
+                                    <lb />
+                                </note>
+                            </p>
+                            <p n="1">Per saperne di più clicca sulla mappa.</p>
+                        </place> 
+
+                    <!--Trieste-->
+                        <place xml:id="TR">
+                            <p>
+                                <placeName>Trieste
+                                    <lb />
+                                </placeName>
+                                <note> comune italiano, capoluogo della regione <placeName>Friuli-Venezia Giulia</placeName>.</note>
+                            </p>
+                        </place>
+
+                    <!--Valle del Po-->
+                        <place xml:id="VP">
+                            <p>
+                                <placeName><geogName><geogFeat>Valle</geogFeat>Po</geogName>
+                                    <lb />
+                                </placeName>
+                                <note>valle delle <placeName><geogName><geogFeat>Alpi</geogFeat>Cozie</geogName></placeName> in provincia di <placeName><settlement type="city">Cuneo</settlement></placeName> scavata dal <placeName><geogName><geogFeat>fiume</geogFeat>Po</geogName></placeName> prima che questi entri nella <placeName><geogName><geogFeat>Pianura</geogFeat>Padana</geogName></placeName>.</note>
+                            </p>
+                        </place>
+
+                    </listPlace>
+
+                <!--Organizzazioni-->
+                <listOrg>
+
+                    <org xml:id="banda_p1">
+                        <p>
+                            <orgName>Banda partigiana 1</orgName>:
+                            <lb />
+                            <note>banda partigiana in cui è presente <persName><ref target="#EA"><forename>Emanuele</forename> <surname>Artom</surname></ref></persName>, <persName><ref target="#Ma"><forename>Mario</forename></ref></persName>, <persName><ref target="#Si"><forename>Silvio</forename></ref></persName>, <persName><ref target="#En"><forename>Enzo</forename></ref></persName>, <persName><ref target="#Ro"><forename>Roberto</forename></ref></persName>.</note>
+                        </p>
+                    </org>
+
+                    <org xml:id="banda_p2">
+                        <p>
+                            <orgName>Banda partigiana 2</orgName>:
+                            <lb />
+                            <note>banda partigiana composta da <num type="cardinal" value="10">dieci</num> uomini (tra cui <persName><ref target="#Os"><forename>Oscar</forename></ref></persName>) venuti da <placeName><ref target="#BA">Barge</ref></placeName>.</note>
+                        </p>
+                    </org>
+
+                    <org xml:id="GIL">
+                        <p>
+                            <orgName>Gioventù Italiana del Littorio</orgName>:
+                            <lb />
+                            <note>organizzazione delle forze giovanili del regime fascista, sorta il <date when="1937-10-29">29 ottobre 1937</date> dalla fusione dell’<orgName>Opera Nazionale Balilla</orgName> e dei <orgName>Fasci Giovanili di Combattimento</orgName>.</note>
+                        </p>
+                    </org>
+
+                </listOrg>  
+                
+                <!-- Glossario -->
+                <list type="gloss">
+
+                    <label xml:id="term_auto">
+                        <term>Autocrazia</term>
+                    </label>
+                    <item>
+                        <gloss target="#term_auto" source="https://www.treccani.it/vocabolario/autocrazia/">Potere assoluto.</gloss>
+                    </item>
+
+                    <label xml:id="term_com">
+                        <term>Comunismo</term>
+                    </label>
+                    <item>
+                        <gloss target="#term_com" source="https://www.treccani.it/enciclopedia/comunismo">Dottrina che, sulla base delle formulazioni teoriche di K. Marx e F. Engels, propugna un sistema sociale nel quale sia i mezzi di produzione sia i mezzi di consumo sono sottratti alla proprietà privata e trasformati in proprietà comune, e la gestione e distribuzione di essi viene esercitata collettivamente dall’intera società nell’interesse e con la piena partecipazione di tutti i suoi membri.</gloss>
+                    </item>
+                    
+                    <label xml:id="term_fasc">
+                        <term>Fascismo</term>
+                    </label>
+                    <item>
+                        <gloss target="#term_fasc" source="https://www.treccani.it/enciclopedia/fascismo/">Movimento politico italiano fondato nel 1919 da B. Mussolini, giunto al potere nel 1922 e rimasto al governo dell’Italia fino al 1943.</gloss>
+                    </item>
+                    
+                    <label xml:id="term_interp">
+                        <term> Interpartito</term>
+                    </label>
+                    <item>
+                        <gloss target="#term_interp" source="https://www.dizionario-italiano.it/dizionario-italiano.php?lemma=INTERPARTITO100">Aggettivo sinonimo, ma meno comune di "interpartitico", che significa "comune a più partiti"</gloss>
+                    </item>
+                    
+                    <label xml:id="term_mil">
+                        <term>Milizia</term>
+                    </label>
+                    <item>
+                        <gloss target="#term_mil" source="https://www.treccani.it/enciclopedia/milizia/">Moltitudine di uomini armati, sottoposti alla disciplina militare e ammaestrati al combattimento.</gloss>
+                    </item>
+                    
+                    <label xml:id="term_naz">
+                        <term>Nazismo</term>
+                    </label>
+                    <item>
+                        <gloss target="#term_naz" source="https://www.treccani.it/enciclopedia/nazismo/">Forma abbreviata per nazionalsocialismo, con riferimento al regime dittatoriale instaurato in Germania da A. Hitler e operante dal 1933 al 1945.</gloss>
+                    </item>
+                    
+                    <label xml:id="term_part">
+                        <term>Partigiano</term>
+                    </label>
+                    <item>
+                        <gloss target="#term_part" source="https://www.treccani.it/enciclopedia/partigiano/">Membro di formazioni irregolari armate che agiscono su un territorio occupato dal nemico esercitando azioni di disturbo e di guerriglia.</gloss>
+                    </item>
+
+                    <label xml:id="term_soc">
+                        <term>Socialismo</term>
+                    </label>
+                    <item>
+                        <gloss target="#term_soc" source="https://www.treccani.it/enciclopedia/socialismo/">Nel senso storicamente più vasto, ogni dottrina, teoria o ideologia che postuli una riorganizzazione della società su basi collettivistiche e secondo principi di uguaglianza sostanziale, contrapponendosi alle concezioni individualistiche della vita umana.</gloss>
+                    </item>
+                    
+                </list>
+
+            </div>
+
+        </back>
+        
+    </text>
+
+</TEI>
+    
+
+                     
+        
+                
+
+
+

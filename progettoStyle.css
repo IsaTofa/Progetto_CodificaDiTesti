@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Lexend:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E8CEB0;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    background-color: #B43052;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 25px;
+    color: #ffffff;
+    font-family: 'Coda', cursive;
+}
+
+nav {
+    z-index: 1;
+}
+
+nav * {
+    clear: left;
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center; 
+}
+
+nav a.menu {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul li {
+    flex-grow: 1;
+    background-color: #B43052;
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+    height: 25px;
+}
+
+nav ul li ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+nav li li  {
+    height: 0;
+    overflow: hidden;
+    border: none;
+}
+
+nav li li a {
+    font-weight: normal;
+    border-bottom: 1px solid #ffffff;
+    font-size: 18px;
+}
+
+nav li ul {
+    width: 100%;
+}
+
+nav > ul > li:hover {
+    background-color: #932842;
+}
+
+nav > ul > li:hover li {
+    z-index: 2;
+    height: 25px;
+    -webkit-transition: height 0.5s ease-in;
+    -moz-transition: height 0.5s ease-in;
+    -o-transition: height 0.5s ease-in;
+    -ms-transition: height 0.5s ease-in;
+    transition: height 0.5s ease-in;
+}
+
+nav > ul > li li:hover {
+    background-color: #932842;
+}
+
+section {
+    padding: 50px 70px 50px 70px;
+}
+
+p.intro {
+    text-align: center;
+}
+
+section.informazioniG h2 {
+    text-align: center;
+}
+
+h2 {
+    color: #932842;
+    font-size: 35px;
+    font-family: 'Coda', cursive;
+}
+
+img#artom {
+    width: 15%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    color: #932842;
+    font-size: 30px;
+    font-family: 'Coda', cursive;
+}
+
+div#container_p_chiave p {
+    text-align: center;
+}
+
+b.p_chiave {
+    border: 2px solid #B43052;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #B43052;
+    color: #ffffff;
+}
+
+section#legenda h2 {
+    text-align: center;
+}
+
+section#legenda article {
+    text-align: center;
+}
+
+section#legenda article ul {
+    list-style-type: none;
+    background-color: #F5E8E5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section.pagina article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+img {
+    width: 45%;
+}
+
+div.testo {
+    background: #F5E8E5;
+    line-height: 0.835;
+    padding: 20px;
+    font-size: 15px;
+}
+
+p.date_diario {
+    text-align: right;
+}
+
+span.canc_A {
+    text-decoration:line-through;
+}
+
+span.canc_C {
+    text-decoration:line-through; 
+    text-decoration-color:#B43052;
+}
+
+span.corr_C {
+    color:#B43052;
+}
+
+mark.nomi_P {
+    background-color:#899AAF;
+}
+
+mark.term {
+    background-color:#E4D38A;
+}
+
+mark.term_est {
+    background-color: #fca261; 
+}
+
+mark.nomi_L {
+    background-color:#85C28C;
+}
+
+a:link {
+    color: #003366;
+}
+
+a:visited {
+    color: #17472f;
+}
+
+section#infoLuog article {
+    display: flex;
+    align-items: center;
+}
+
+img.mappa {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 70px 50px 70px;
+    background-color: #B43052;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
